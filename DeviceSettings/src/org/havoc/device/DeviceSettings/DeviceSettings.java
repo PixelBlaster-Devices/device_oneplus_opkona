@@ -66,6 +66,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_VIBSTRENGTH = "vib_strength";
 
     private static final String PREF_DOZE = "advanced_doze_settings";
+    private static final String KEY_ENABLE_DOLBY_ATMOS = "enable_dolby_atmos";
 
     private static final String FILE_LEVEL = "/sys/devices/platform/soc/a8c000.i2c/i2c-3/3-005a/leds/vibrator/level";
     private static final long testVibrationPattern[] = {0,50};
@@ -75,6 +76,7 @@ public class DeviceSettings extends PreferenceFragment
     private static SwitchPreference mFpsInfo;
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
+    private static TwoStatePreference mEnableDolbyAtmos;
     private Preference mKcal;
 
     private ProperSeekBarPreference mVibratorStrengthPreference;
@@ -116,6 +118,9 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfo.setChecked(isFPSOverlayRunning());
         mFpsInfo.setOnPreferenceChangeListener(this);
 
+        mEnableDolbyAtmos = (TwoStatePreference) findPreference(KEY_ENABLE_DOLBY_ATMOS);
+        mEnableDolbyAtmos.setOnPreferenceChangeListener(this);
+
         mKcal = findPreference(PREF_DEVICE_KCAL);
         mKcal.setOnPreferenceClickListener(preference -> {
             Intent intent = new Intent(getActivity().getApplicationContext(), KCalSettingsActivity.class);
@@ -153,6 +158,22 @@ public class DeviceSettings extends PreferenceFragment
                 this.getContext().startService(fpsinfo);
             } else {
                 this.getContext().stopService(fpsinfo);
+            }
+        } else if (preference == mEnableDolbyAtmos) {
+            boolean enabled = (Boolean) newValue;
+            Intent daxService = new Intent();
+            ComponentName name = new ComponentName("com.dolby.daxservice", "com.dolby.daxservice.DaxService");
+            daxService.setComponent(name);
+            if (enabled) {
+                // enable service component and start service
+                this.getContext().getPackageManager().setComponentEnabledSetting(name,
+                        PackageManager.COMPONENT_ENABLED_STATE_DEFAULT, 0);
+                this.getContext().startService(daxService);
+            } else {
+                // disable service component and stop service
+                this.getContext().stopService(daxService);
+                this.getContext().getPackageManager().setComponentEnabledSetting(name,
+                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
             }
         } else if (preference == mAutoHBMSwitch) {
             Boolean enabled = (Boolean) newValue;
