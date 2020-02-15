@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Amplifier
+PRODUCT_PACKAGES += \
+    audio_amplifier.kona
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
