@@ -201,6 +201,7 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
     init.qti.ufs.rc \
     init.target.rc \
+    libinit_sm8250 \
     ueventd.oneplus.rc
 
 PRODUCT_COPY_FILES += \
