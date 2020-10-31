@@ -176,6 +176,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# Overlays
+PRODUCT_PACKAGES += \
+    OverlayFrameworks
+
 # QMI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
