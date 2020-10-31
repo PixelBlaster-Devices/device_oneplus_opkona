@@ -178,7 +178,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    OverlayFrameworks
+    OverlayFrameworks \
+    OverlaySystemUI
 
 # QMI
 PRODUCT_PACKAGES += \
