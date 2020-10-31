@@ -179,7 +179,9 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     OverlayFrameworks \
-    OverlaySystemUI
+    OverlaySystemUI \
+    OverlayFrameworksCAF \
+    WifiResTarget
 
 # QMI
 PRODUCT_PACKAGES += \
