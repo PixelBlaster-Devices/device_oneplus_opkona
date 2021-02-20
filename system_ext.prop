@@ -12,6 +12,11 @@ ro.charger.enable_suspend=1
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
+# IFAA
+persist.sys.fod.pos.x=453
+persist.sys.fod.pos.y=1823
+persist.sys.fod.size=174
+
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 ro.media.recorder-max-base-layer-fps=60
