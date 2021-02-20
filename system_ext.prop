@@ -34,6 +34,11 @@ persist.vendor.dpm.feature=9
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
+# IFAA
+persist.sys.fod.pos.x=453
+persist.sys.fod.pos.y=1823
+persist.sys.fod.size=174
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1

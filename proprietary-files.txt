@@ -684,6 +684,23 @@ system_ext/lib64/libimsmedia_jni.so|9f192af40439abb04d5d5f0f3de5b772c9381114
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|0c11ff5a7a671073ee40e17d46aa8b7acbf1dc0a
 system_ext/priv-app/ims/ims.apk|f0d834acbc77e7830459e0246f5073e1b9ba8657
 
+# IFAA - from OOS 11.2.8.8
+system_ext/priv-app/IFAAService/IFAAService.apk|8c8baca2cf6fcfdf1e727436fb6b9b2d888fed75
+vendor/lib64/vendor.oneplus.hardware.ifaa@2.0.so|9ccac456a9f05cce8aa339965bec673f06395467
+vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service|8c715bc2dd0fcae870050abc8bdaee99043d554f
+vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc|17f485f5523372cc627503f36f1e84348233b777
+
+# IFAA firmware
+odm/vendor/firmware/alipay.b00:system/etc/firmware/alipay.b00
+odm/vendor/firmware/alipay.b01:system/etc/firmware/alipay.b01
+odm/vendor/firmware/alipay.b02:system/etc/firmware/alipay.b02
+odm/vendor/firmware/alipay.b03:system/etc/firmware/alipay.b03
+odm/vendor/firmware/alipay.b04:system/etc/firmware/alipay.b04
+odm/vendor/firmware/alipay.b05:system/etc/firmware/alipay.b05
+odm/vendor/firmware/alipay.b06:system/etc/firmware/alipay.b06
+odm/vendor/firmware/alipay.b07:system/etc/firmware/alipay.b07
+odm/vendor/firmware/alipay.mdt:system/etc/firmware/alipay.mdt
+
 # IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
