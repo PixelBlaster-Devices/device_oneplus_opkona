@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from OnePlus8ProOxygen_15.E.35_OTA_0350_all_2103221817_e79fa5
+# All unpinned blobs below are extracted from OnePlus9ROxygen_13.I.02_OTA_0020_all_2104090043_3793108ba578
 
 # ADSP
 vendor/bin/adsprpcd
@@ -81,16 +81,16 @@ vendor/lib64/libbtnv.so
 # Bluetooth (A2DP)
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
@@ -100,118 +100,118 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# Camera
-vendor/bin/hw/vendor.oneplus.hardware.camera@1.0-service
-vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service
-vendor/bin/vl53l1_daemon_main
-vendor/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc
-vendor/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/com.qti.feature2.anchorsync.so
-vendor/lib64/com.qti.feature2.demux.so
-vendor/lib64/com.qti.feature2.frameselect.so
-vendor/lib64/com.qti.feature2.fusion.so
-vendor/lib64/com.qti.feature2.generic.so
-vendor/lib64/com.qti.feature2.gs.so
-vendor/lib64/com.qti.feature2.hdr.so
-vendor/lib64/com.qti.feature2.memcpy.so
-vendor/lib64/com.qti.feature2.mfsr.so
-vendor/lib64/com.qti.feature2.qcfa.so
-vendor/lib64/com.qti.feature2.rawhdr.so
-vendor/lib64/com.qti.feature2.rt.so
-vendor/lib64/com.qti.feature2.serializer.so
-vendor/lib64/com.qti.feature2.stub.so
-vendor/lib64/com.qti.feature2.swmf.so
-vendor/lib64/lib_bokehlib.so
-vendor/lib64/lib_oneplus_vivideffect.so
-vendor/lib64/lib_oneplus_watermark.so
-vendor/lib64/libAlgoProcess.so
-vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_beautyshot_4.0.so
-vendor/lib64/libarcsoft_calibverify_TriCamera.so
-vendor/lib64/libarcsoft_dualcam_bokeh_api.so
-vendor/lib64/libarcsoft_dualcam_refocus_left.so
-vendor/lib64/libarcsoft_dualcam_refocus_preview.so
-vendor/lib64/libarcsoft_dualcam_refocus_right.so
-vendor/lib64/libarcsoft_dualcam_refocus_uw.so
-vendor/lib64/libarcsoft_fringe_remove.so
-vendor/lib64/libarcsoft_hdr_couple_api.so
-vendor/lib64/libarcsoft_hdr_denoise_api.so
-vendor/lib64/libarcsoft_hdr_denoise_api_v4.so
-vendor/lib64/libarcsoft_hdrplus_hvx_stub.so
-vendor/lib64/libarcsoft_high_dynamic_range.so
-vendor/lib64/libarcsoft_high_dynamic_range_couple.so
-vendor/lib64/libarcsoft_high_dynamic_range_v4.so
-vendor/lib64/libarcsoft_hta.so
-vendor/lib64/libarcsoft_low_light_hdr.so
-vendor/lib64/libarcsoft_mfsr_frt.so
-vendor/lib64/libarcsoft_portrait_distortion_correction.so
-vendor/lib64/libarcsoft_portrait_distortion_correction_20801.so
-vendor/lib64/libarcsoft_smart_denoise.so
-vendor/lib64/libarcsoft_smart_denoise_v4.so
-vendor/lib64/libarcsoft_stripe_removal.so
-vendor/lib64/libarcsoft_super_night_raw.so
-vendor/lib64/libarcsoft_superportrait.so
-vendor/lib64/libarcsoft_tricam_calibration.so
-vendor/lib64/libarcsoft_tricam_verification.so
-vendor/lib64/libarcsoft_video_fringing_correction.so
-vendor/lib64/libcamera_nn_stub.so
-vendor/lib64/libcamerapostproc.so
-vendor/lib64/libcamxexternalformatutils.so
-vendor/lib64/libcamxfacialfeatures.so
-vendor/lib64/libcamxfdalgo.so
-vendor/lib64/libcamxfdengine.so
-vendor/lib64/libcamxifestriping.so
-vendor/lib64/libcamximageformatutils.so
-vendor/lib64/libcamxncs.so
-vendor/lib64/libcamxstatscore.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
-vendor/lib64/libcamxtintlessalgo_21.so
-vendor/lib64/libchilog.so
-vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libcvface_api.so
-vendor/lib64/libcvp2.so
-vendor/lib64/libcvp2_hfi.so
-vendor/lib64/libcvp_common.so
-vendor/lib64/libdualcam_image_optical_zoom.so
-vendor/lib64/libdualcam_optical_zoom_control.so
-vendor/lib64/libdualcam_video_optical_zoom.so
-vendor/lib64/libipebpsstriping.so
-vendor/lib64/libmorpho_dcface.so
-vendor/lib64/libmorpho_image_refiner_deflicker.so
-vendor/lib64/libmpbase.so
-vendor/lib64/libnightvision.so
-vendor/lib64/libofflinelog.so
-vendor/lib64/libop-bokeh.so
-vendor/lib64/libOPPO_Front_SCPortrait.so
-vendor/lib64/libOPPO_SCPortrait.so
-vendor/lib64/libos.so
-vendor/lib64/libPolarrRender.so
-vendor/lib64/libSonyIMX471RmscLibrary.so
-vendor/lib64/libstblur_capture_api.so
-vendor/lib64/libSuperSensor.so
-vendor/lib64/libSuperSensorFallback.so
-vendor/lib64/libSuperSensorProcessor.so
-vendor/lib64/libSuperSensorProcessorCWrapper.so
-vendor/lib64/libsynx.so
-vendor/lib64/libthreadutils.so
-vendor/lib64/libtriplecam_image_optical_zoom.so
-vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/libtriplecam_video_optical_zoom.so
-vendor/lib64/libVDBlurless.so
-vendor/lib64/libVDDualCameraBlurlessAPI.so
-vendor/lib64/libVDFusionBlurlessAPI_v2.so
-vendor/lib64/libVDSuperPhotoAPI.so
-vendor/lib64/libvl53l1_daemon.so
-vendor/lib64/sensors.hal.tof.so
-vendor/lib64/vendor.oneplus.hardware.camera@1.0.so
-vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+# Camera - from OnePlus 8 Pro - OB9
+vendor/bin/hw/vendor.oneplus.hardware.camera@1.0-service|6addf6d192258b2eecdb73a32eb75b69517b9a7e
+vendor/bin/hw/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service|1dab5b54cf0c0668f704bfad4eb1fc34c0e7748f
+vendor/bin/vl53l1_daemon_main|24e9391c2498a47fa8c63dd2729506a01812675c
+vendor/etc/init/vendor.oneplus.hardware.camera@1.0-service.rc|d331319761e510222628527476d6869de0e5e252
+vendor/etc/init/vendor.oneplus.hardware.CameraMDMHIDL@1.0-service.rc|4f95235e46eb8c9ff6f596423937e4296495c7e9
+vendor/lib/libcamxexternalformatutils.so|8fb3f70a17926f29ffa7cc1f153db07b53f84470
+vendor/lib64/hw/com.qti.chi.override.so|dcde1992ee1ad0032d79b1336ac2f32aace7c5a4
+vendor/lib64/com.qti.feature2.anchorsync.so|c48792f21c3c5f2f8850c711903664d19624146a
+vendor/lib64/com.qti.feature2.demux.so|7a750f54bec3a2f1b3402bb822ea2a662a35f1dc
+vendor/lib64/com.qti.feature2.frameselect.so|cfdb171ea0a84fb5bd41158db66a601e04e5bad0
+vendor/lib64/com.qti.feature2.fusion.so|1c93bb0415a27fac9bdf0cad575b3206c0a16b8f
+vendor/lib64/com.qti.feature2.generic.so|ce1e43cc0915a9f361e0c4dcc4e04e352ab132fb
+vendor/lib64/com.qti.feature2.gs.so|196c596d9385716881ef8f9b0df6bc489727a14b
+vendor/lib64/com.qti.feature2.hdr.so|1090950e2faf924d4697f21d32c3b13c29740ee2
+vendor/lib64/com.qti.feature2.memcpy.so|235ec6f87718bd788d6f22608f49d44fc616df44
+vendor/lib64/com.qti.feature2.mfsr.so|1caa4575229f930bbde2cfb98ea87f3ebc0924e5
+vendor/lib64/com.qti.feature2.qcfa.so|b582aaf56d9ff85dfe42f177e55c62ddc49f920f
+vendor/lib64/com.qti.feature2.rawhdr.so|23e0df8f6c378d2ba6a5d581f307a21ecb4acf7d
+vendor/lib64/com.qti.feature2.rt.so|94e0c8e736f04007251fb104b57e16868afceb30
+vendor/lib64/com.qti.feature2.serializer.so|f7e01a987db0b4d132288bc217ebc9a327489170
+vendor/lib64/com.qti.feature2.stub.so|d6df707d5d1d3241b3dab13514aa79e3ebfba74f
+vendor/lib64/com.qti.feature2.swmf.so|228495bf78b8b756ff9fbbd8981f67dd3e61466b
+vendor/lib64/lib_bokehlib.so|8d6617afbe40dda54d2092ed8beed0c15e035ee8
+vendor/lib64/lib_oneplus_vivideffect.so|35f66c2937264a042ab80f7e69a9f45824c935d9
+vendor/lib64/lib_oneplus_watermark.so|8bd31c911b085b935850c2de99be0b39901e9ea6
+vendor/lib64/libAlgoProcess.so|94ab0940c041fd6f2a15769ecc96153cacc4017b
+vendor/lib64/libarcsoft_beautyshot.so|19d988fcefa71686e7ef8cfacf27342bc00f8588
+vendor/lib64/libarcsoft_beautyshot_4.0.so|abbdd2398bc1acabbfc700e529f2188b02a82375
+vendor/lib64/libarcsoft_calibverify_TriCamera.so|bbe7dfc0a323a30aaf92bab38b1c6c0932780f02
+vendor/lib64/libarcsoft_dualcam_bokeh_api.so|e170ec7b663a2357d887d2359942347e30ea734d
+vendor/lib64/libarcsoft_dualcam_refocus_left.so|3a8447d232448179024c8c4d6d7316816b92897d
+vendor/lib64/libarcsoft_dualcam_refocus_preview.so|e71a706e4de40e8715b88088b50074d257019584
+vendor/lib64/libarcsoft_dualcam_refocus_right.so|7ca39e788a23ee5966ddbca63b8c041e9de3eff2
+vendor/lib64/libarcsoft_dualcam_refocus_uw.so|8dceadb6a97cf4dc54e5c746d621d7fdaeb1373f
+vendor/lib64/libarcsoft_fringe_remove.so|c0320d5ef5851968b0b3e371abe7e7cdae48e80e
+vendor/lib64/libarcsoft_hdr_couple_api.so|6fe87e06c93f0fc874dc00d20e751076dcf6c1cd
+vendor/lib64/libarcsoft_hdr_denoise_api.so|8ea2bdcbab00687914fe64a7c603cf562b74c46c
+vendor/lib64/libarcsoft_hdr_denoise_api_v4.so|d4e483846ce4f1105efd056c595811cabc8bebb5
+vendor/lib64/libarcsoft_hdrplus_hvx_stub.so|b181e6f4027d57eb5c28475d4e08ad8b279e8dcc
+vendor/lib64/libarcsoft_high_dynamic_range.so|68ebe32749e56255aefbfab1c517866ec954cf3a
+vendor/lib64/libarcsoft_high_dynamic_range_couple.so|4fce7ac3b5647da68b72dd4dfa173b9ed2d6ea9f
+vendor/lib64/libarcsoft_high_dynamic_range_v4.so|d609ddd02abe1476e3bfebf8edc99e0db2fa0739
+vendor/lib64/libarcsoft_hta.so|248512acbad5554bb92f04ba2686398a45f8fbfd
+vendor/lib64/libarcsoft_low_light_hdr.so|603616fe7aa49cfb433c751852e38f31452b7ff6
+vendor/lib64/libarcsoft_mfsr_frt.so|1f2d0080613aff748ea71b8ff27c725017d6e12a
+vendor/lib64/libarcsoft_portrait_distortion_correction.so|4c210a467a1065eacabe49cbd482048535cdd67c
+vendor/lib64/libarcsoft_portrait_distortion_correction_20801.so|3d0c2b648c4093b809aad35eb93e5d0b44d68b1b
+vendor/lib64/libarcsoft_smart_denoise.so|6e904b17a255417e1ab11f97d44a7874b953e2fe
+vendor/lib64/libarcsoft_smart_denoise_v4.so|5a1f4a34c9ed5c0c27f83aee7ddd44880e4e9899
+vendor/lib64/libarcsoft_stripe_removal.so|fc6b8b7f52aafbdf758cb9f4b223c7d163d1afdd
+vendor/lib64/libarcsoft_super_night_raw.so|d3cbe6db8a82625696ae9c068126d1f1fc6c7777
+vendor/lib64/libarcsoft_superportrait.so|0bb446e3bdc7fe8ed77b068aa539e27e2d101a6d
+vendor/lib64/libarcsoft_tricam_calibration.so|8efb4d9a45a6b41af7c2119ae4c621b1ca7e5853
+vendor/lib64/libarcsoft_tricam_verification.so|2d5c98df8256caeb10720335b3f06ebe2bc6e860
+vendor/lib64/libarcsoft_video_fringing_correction.so|fe603d9b563d0fc6048582cb5ab61da2ad3e299f
+vendor/lib64/libcamera_nn_stub.so|020a6cd6cee8e550f87cf39c1496979139a31961
+vendor/lib64/libcamerapostproc.so|584819f15d81c524705366e2adc4b7fdcfc96334
+vendor/lib64/libcamxexternalformatutils.so|8e8bd425756fd4b8ce7a8eeec583227731dd6ea3
+vendor/lib64/libcamxfacialfeatures.so|790267d34401dd9beebfdb35fa64cf310bea1361
+vendor/lib64/libcamxfdalgo.so|da37c1af0e9320a27dd371bcd695250ab2847c92
+vendor/lib64/libcamxfdengine.so|2675c8341e0fce09c7fe0534c90c52e91fc514d7
+vendor/lib64/libcamxifestriping.so|7f4429ffd4120cf81f99de5988c51410a3dc9be0
+vendor/lib64/libcamximageformatutils.so|9cf8eb9c76f0895288f0dce42fadcbe84f5dfddb
+vendor/lib64/libcamxncs.so|51de652bd87cd0574818eb50768929429db58b1d
+vendor/lib64/libcamxstatscore.so|a6fa935a3ef4d56a3a232a328b12d05955ecca6a
+vendor/lib64/libcamxswprocessalgo.so|e2349581c9447a1c67cc55b53979c3b9e4b06d6d
+vendor/lib64/libcamxtintlessalgo.so|71b40ddcd8a0afa1b9f2d0786ae0f24677e62eca
+vendor/lib64/libcamxtintlessalgo_21.so|6730e594ee3b6769dae18109e2e85227fd1b61cf
+vendor/lib64/libchilog.so|d217aa2ef983b900f5d83c2a704dfb574b4c5bfc
+vendor/lib64/libcom.qti.chinodeutils.so|dde054c9f3e4a36bec910f0a0e8e6be7052adbc3
+vendor/lib64/libcvface_api.so|c48d99b8774076709ca68dbd8f88c0d74594e74c
+vendor/lib64/libcvp2.so|047fff73b31d4a55f721d9f12dde3f6c4e36fe26
+vendor/lib64/libcvp2_hfi.so|a77841a7b4d6b31f791947b9fc5673edd97257df
+vendor/lib64/libcvp_common.so|b08b72b43148f0163c262fdb2f95f79d25ec8be2
+vendor/lib64/libdualcam_image_optical_zoom.so|da34a55b9feab080f8bbb5d03671d48946328214
+vendor/lib64/libdualcam_optical_zoom_control.so|10f644a88ed9fab4902743ac06d2afc714ed06a5
+vendor/lib64/libdualcam_video_optical_zoom.so|10cd840e438828eb6dd5d871ba9ce470627d4650
+vendor/lib64/libipebpsstriping.so|6f823a54eff8b554a9e2713cbe697895c355c373
+vendor/lib64/libmorpho_dcface.so|78a834b5e5f038809a5e4dce7044f5a8c8170e2e
+vendor/lib64/libmorpho_image_refiner_deflicker.so|e04a9eccdec3f6483f0f1b63fd3f463b25fc50bb
+vendor/lib64/libmpbase.so|e6b51e2d501f434eea15ecdc275011d1498301ae
+vendor/lib64/libnightvision.so|59c5bae45a3d56274154dc0281ba9dae337f8805
+vendor/lib64/libofflinelog.so|8bf21f12deb0a1f44ede1e939db557c89081681a
+vendor/lib64/libop-bokeh.so|78290914e0ac1c6ebfb824b56d69e7d46050d322
+vendor/lib64/libOPPO_Front_SCPortrait.so|6ba2da5bcf5f3bcfde4554b8abd23fbe8365544e
+vendor/lib64/libOPPO_SCPortrait.so|6ba2da5bcf5f3bcfde4554b8abd23fbe8365544e
+vendor/lib64/libos.so|d4bac6ec8f202e7440cc9cab35951b5a1ee36803
+vendor/lib64/libPolarrRender.so|a9567a713c66f83bd23dc50a99098e2d262f4c30
+vendor/lib64/libSonyIMX471RmscLibrary.so|c02c536f6a0617e078c19afd857eace72a4337a4
+vendor/lib64/libstblur_capture_api.so|42723608eea949aab3087412566e4ac50d1a9d31
+vendor/lib64/libSuperSensor.so|1e2bf267a842028f42b9080d5876b95336dc1514
+vendor/lib64/libSuperSensorFallback.so|346f23ea2f419035259fd36d4969ceac42f4dbfc
+vendor/lib64/libSuperSensorProcessor.so|868d50ba545d5a7ec6cf4db4ba640fbdb77904c1
+vendor/lib64/libSuperSensorProcessorCWrapper.so|b7e3a8303823541de9332fb0adff8136ad006974
+vendor/lib64/libsynx.so|610d8826abdf1f3753ed3d93309d0d059b27dbfe
+vendor/lib64/libthreadutils.so|cec03b81e8a0a3e915f9b32d6211f42c0153bfdd
+vendor/lib64/libtriplecam_image_optical_zoom.so|f87aa99c54151ba163dfe9e9415b089b4991eb77
+vendor/lib64/libtriplecam_optical_zoom_control.so|175f0b1c24d115e29892c8645b8edf06f446a310
+vendor/lib64/libtriplecam_video_optical_zoom.so|416f5f2e752f979ab967414a541ebe03cbd884a9
+vendor/lib64/libVDBlurless.so|583c6af9cfc22a04dbf8e170c948caa20881857b
+vendor/lib64/libVDDualCameraBlurlessAPI.so|2215c0d10bb3beabffea4db4e7b60437a0018975
+vendor/lib64/libVDFusionBlurlessAPI_v2.so|6a1e78ba2c4529b5e6e7b72a368720c1fa44206c
+vendor/lib64/libVDSuperPhotoAPI.so|b0a4e835ef21ff56fd87c6269f5af907c2e2b182
+vendor/lib64/libvl53l1_daemon.so|ac47d64fe225cdbe4d3960c937770fa63a2481f7
+vendor/lib64/sensors.hal.tof.so|4a46e10731a9b3ef8703df6652364a5b32db511a
+vendor/lib64/vendor.oneplus.hardware.camera@1.0.so|7a804b98e89d12a334ffcef7dceffbb1130b3494
+vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so|4c3ca198c728849580d9dd77d505a9dcb45a1fa2
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|1ff5e9102a4eeb4442f4d89fe74bf19c93402d90
 
-# Camera firmware
-vendor/firmware/CAMERA_ICP.elf
+# Camera firmware - from OnePlus 8 Pro - OB9
+vendor/firmware/CAMERA_ICP.elf|9372b2c3c4cc7cc3349ef121bd9c6832772f259c
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -238,9 +238,6 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 # CNE
 -vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
-vendor/etc/cne/Nexus/ATT/ATT_profiles.xml
-vendor/etc/cne/Nexus/ROW/ROW_profiles.xml
-vendor/etc/cne/Nexus/VZW/VZW_profiles.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -300,29 +297,29 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display
-vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service
-vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc
+# Display - from OnePlus 8 Pro - OB9
+vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service|6eaa40be20b45c8b5eaf2b213e87f939bc43bed5
+vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc|03b0c962b97fc6cfb99a6b4f838928e7de7e188d
 
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
+# Display (HDR) - from OnePlus 8 Pro - OB9
+vendor/lib64/libhdr_tm.so|0542612a3061a841b6e03374b48f0a207e10431b
 
-# Display (HWC)
-vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
+# Display (HWC) - from OnePlus 8 Pro - OB9
+vendor/bin/hw/vendor.qti.hardware.display.composer-service|9086feb1a2d2e57eb6c84a83bffd6e7bd63144f2
+vendor/lib64/libsdmcore.so|1b0844d96cf322a75d77533d0c98ef1f8de9e2e4
+vendor/lib64/libsdmutils.so|c0ec6f1920e375c5c2132fe745f5150e5e2436b4
 
-# Display (SDM)
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Display (SDM) - from OnePlus 8 Pro - OB9
+vendor/lib64/libdisplayqos.so|d1dfede9c01dc48025a8ecd5c191015051e7cf9c
+vendor/lib64/libdisplayskuutils.so|5b55c8a9feceedb021e77a7fee29a82f9ea8fb2b
+vendor/lib64/libqseed3.so|b36a04b987c00f546ad33fb2591cf420870432f9
+vendor/lib64/libsdedrm.so|c8ed5a3a2f645a1424d2cb4af93a496fa1c9264b
+vendor/lib64/libsdm-color.so|aa828f66b40bd72e5c1e487568136f687cb4ff56
+vendor/lib64/libsdm-colormgr-algo.so|40727feb85ee6fb9455c64b65a64f78b4747a523
+vendor/lib64/libsdm-diag.so|91d50bcf2eaceb15ad55f4aec6317cf6327c06ed
+vendor/lib64/libsdm-disp-vndapis.so|0ac399694e25284d83f9caa4cad499562c49332f
+vendor/lib64/libsdmextension.so|dd01c65fdb05fc401d61fda80f55e7c4964c0a55
+vendor/lib64/libtinyxml2_1.so|980ae2b74477fe5a095baf39ff43df14d9c58a3a
 
 # Display calibration data
 vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
@@ -332,18 +329,18 @@ vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_ana6706_dsc_cmd_mode_panel.xml
 
-# Display postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/ppd
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.color@1.4.so
-vendor/lib64/vendor.display.color@1.5.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Display postprocessing - from OnePlus 8 Pro - OB9
+vendor/bin/hw/vendor.display.color@1.0-service|693ea4aec88550ad1ab596893ec3c58749209655
+vendor/bin/ppd|701dcf54d4d33073dbd56ba0f3a800142dc7a4f5
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib64/libdisp-aba.so|f7231a9254d985b43d8ad998e2adf35f61914534
+vendor/lib64/vendor.display.color@1.0.so|3f57dcd93c60f6db2764955d7d24e86f4b9e8afe
+vendor/lib64/vendor.display.color@1.1.so|e3b0a0e57f6b5c77868cadaee8818ebd179b05c6
+vendor/lib64/vendor.display.color@1.2.so|a9e166e381153484367ad105ba1d26bd74bd7455
+vendor/lib64/vendor.display.color@1.3.so|40ec7bf31f4d55778148d84d2da0352ba52f898f
+vendor/lib64/vendor.display.color@1.4.so|a7867454b399c1e584f9b9ac35c6c35ac6c0ffbf
+vendor/lib64/vendor.display.color@1.5.so|621e3a5236e8a84ab58a4bf649ce23a057a157f0
+vendor/lib64/vendor.display.postproc@1.0.so|7ab35e22eaf723575ff845d78f1c67de307a53a6
 
 # DPM
 framework/tcmclient.jar
@@ -607,26 +604,26 @@ vendor/firmware/ipa_uc.b02
 vendor/firmware/ipa_uc.elf
 vendor/firmware/ipa_uc.mdt
 
-# Iris
-vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
-vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc
-vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
-vendor/etc/inparm/irissoft/mcfCheck.txt
--vendor/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml
--vendor/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
-vendor/lib64/libpwiriscalibrate.so
-vendor/lib64/libpwirisfeature.so
-vendor/lib64/libpwirishalwrapper.so
-vendor/lib64/libpwirisIoctlWrapper.so
-vendor/lib64/libpwirisPCS.so
-vendor/lib64/libpwirispq.so
-vendor/lib64/libpwirisservice.so
-vendor/lib64/libpwirissoft.so
-vendor/lib64/libpwsnapdragoncolor.so
-vendor/lib64/libpwsoftirisPCS.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.0.so
-vendor/lib64/vendor.pixelworks.hardware.display@1.1.so
-vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so
+# Iris - from OnePlus 8 Pro - OB9
+vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service|5a6bdd47342c678f9bc60f524f7ba1644427b576
+vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc|b1fdaffcf7cfc2eb41c8030d085779b95600dced
+vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc|ba2a30c457151c6af8881b18886f80a26d1881f1
+vendor/etc/inparm/irissoft/mcfCheck.txt|21fa00edb330b6fb85cbc90a5096a1a784548dfb
+-vendor/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml|a2ce7558c9b75f223c32120cf4d9f3a3720e12e0
+-vendor/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml|03e2bd611d843301566f053e77a544c9dfccb671
+vendor/lib64/libpwiriscalibrate.so|cbee41b2368e4645aca04be7f691b1e1d368dc11
+vendor/lib64/libpwirisfeature.so|7ce7637803dc09f5dbe33fb36b0d43b8fbeba70e
+vendor/lib64/libpwirishalwrapper.so|ea69b8adb03bfe5aa2afdf5cd15245f7e88153f9
+vendor/lib64/libpwirisIoctlWrapper.so|fadcd4d48175c9d5853697135107a472ff3a38b2
+vendor/lib64/libpwirisPCS.so|346cc45c16c72df58dd6fd0a859048c26f497ae5
+vendor/lib64/libpwirispq.so|37117712c70af414c8739c79a38821147aa43d51
+vendor/lib64/libpwirisservice.so|2ba0ef2dc13b73d96b9f910250b39f935a17be94
+vendor/lib64/libpwirissoft.so|e97721812f6d23dc26e75523ccc2cc6bb5fda745
+vendor/lib64/libpwsnapdragoncolor.so|4795224f9b138dc4158aad221c5b813bf947b2a3
+vendor/lib64/libpwsoftirisPCS.so|dfb9adabbc9d3427442bd77549041098c0f9fe25
+vendor/lib64/vendor.pixelworks.hardware.display@1.0.so|1056e9fbcfc4974b50df2f63c698ca8b3fa20c94
+vendor/lib64/vendor.pixelworks.hardware.display@1.1.so|58a06adaba8540d3457d7fe55eb6e0f05662e363
+vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so|3961793685b4ea2a8dcc51b1ee3b5f7728d3c97b
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -756,8 +753,8 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/libspcom.so
 
 # Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/perf/commonresourceconfigs.xml
 vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
