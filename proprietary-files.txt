@@ -297,30 +297,6 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display - from OnePlus 8 Pro - OB9
-vendor/bin/hw/vendor.oneplus.hardware.display@1.0-service|6eaa40be20b45c8b5eaf2b213e87f939bc43bed5
-vendor/etc/init/vendor.oneplus.hardware.display@1.0-service.rc|03b0c962b97fc6cfb99a6b4f838928e7de7e188d
-
-# Display (HDR) - from OnePlus 8 Pro - OB9
-vendor/lib64/libhdr_tm.so|0542612a3061a841b6e03374b48f0a207e10431b
-
-# Display (HWC) - from OnePlus 8 Pro - OB9
-vendor/bin/hw/vendor.qti.hardware.display.composer-service|9086feb1a2d2e57eb6c84a83bffd6e7bd63144f2
-vendor/lib64/libsdmcore.so|1b0844d96cf322a75d77533d0c98ef1f8de9e2e4
-vendor/lib64/libsdmutils.so|c0ec6f1920e375c5c2132fe745f5150e5e2436b4
-
-# Display (SDM) - from OnePlus 8 Pro - OB9
-vendor/lib64/libdisplayqos.so|d1dfede9c01dc48025a8ecd5c191015051e7cf9c
-vendor/lib64/libdisplayskuutils.so|5b55c8a9feceedb021e77a7fee29a82f9ea8fb2b
-vendor/lib64/libqseed3.so|b36a04b987c00f546ad33fb2591cf420870432f9
-vendor/lib64/libsdedrm.so|c8ed5a3a2f645a1424d2cb4af93a496fa1c9264b
-vendor/lib64/libsdm-color.so|aa828f66b40bd72e5c1e487568136f687cb4ff56
-vendor/lib64/libsdm-colormgr-algo.so|40727feb85ee6fb9455c64b65a64f78b4747a523
-vendor/lib64/libsdm-diag.so|91d50bcf2eaceb15ad55f4aec6317cf6327c06ed
-vendor/lib64/libsdm-disp-vndapis.so|0ac399694e25284d83f9caa4cad499562c49332f
-vendor/lib64/libsdmextension.so|dd01c65fdb05fc401d61fda80f55e7c4964c0a55
-vendor/lib64/libtinyxml2_1.so|980ae2b74477fe5a095baf39ff43df14d9c58a3a
-
 # Display calibration data
 vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/ltm_config_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml
@@ -328,19 +304,6 @@ vendor/etc/ltm_config_samsung_ana6706_dsc_cmd_mode_panel.xml
 vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_ana6705_fhd_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/qdcm_calib_data_samsung_ana6706_dsc_cmd_mode_panel.xml
-
-# Display postprocessing - from OnePlus 8 Pro - OB9
-vendor/bin/hw/vendor.display.color@1.0-service|693ea4aec88550ad1ab596893ec3c58749209655
-vendor/bin/ppd|701dcf54d4d33073dbd56ba0f3a800142dc7a4f5
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib64/libdisp-aba.so|f7231a9254d985b43d8ad998e2adf35f61914534
-vendor/lib64/vendor.display.color@1.0.so|3f57dcd93c60f6db2764955d7d24e86f4b9e8afe
-vendor/lib64/vendor.display.color@1.1.so|e3b0a0e57f6b5c77868cadaee8818ebd179b05c6
-vendor/lib64/vendor.display.color@1.2.so|a9e166e381153484367ad105ba1d26bd74bd7455
-vendor/lib64/vendor.display.color@1.3.so|40ec7bf31f4d55778148d84d2da0352ba52f898f
-vendor/lib64/vendor.display.color@1.4.so|a7867454b399c1e584f9b9ac35c6c35ac6c0ffbf
-vendor/lib64/vendor.display.color@1.5.so|621e3a5236e8a84ab58a4bf649ce23a057a157f0
-vendor/lib64/vendor.display.postproc@1.0.so|7ab35e22eaf723575ff845d78f1c67de307a53a6
 
 # DPM
 framework/tcmclient.jar
@@ -603,27 +566,6 @@ vendor/firmware/ipa_uc.b01
 vendor/firmware/ipa_uc.b02
 vendor/firmware/ipa_uc.elf
 vendor/firmware/ipa_uc.mdt
-
-# Iris - from OnePlus 8 Pro - OB9
-vendor/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service|5a6bdd47342c678f9bc60f524f7ba1644427b576
-vendor/etc/init/vendor.pixelworks.hardware.display.iris-service.rc|b1fdaffcf7cfc2eb41c8030d085779b95600dced
-vendor/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc|ba2a30c457151c6af8881b18886f80a26d1881f1
-vendor/etc/inparm/irissoft/mcfCheck.txt|21fa00edb330b6fb85cbc90a5096a1a784548dfb
--vendor/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml|a2ce7558c9b75f223c32120cf4d9f3a3720e12e0
--vendor/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml|03e2bd611d843301566f053e77a544c9dfccb671
-vendor/lib64/libpwiriscalibrate.so|cbee41b2368e4645aca04be7f691b1e1d368dc11
-vendor/lib64/libpwirisfeature.so|7ce7637803dc09f5dbe33fb36b0d43b8fbeba70e
-vendor/lib64/libpwirishalwrapper.so|ea69b8adb03bfe5aa2afdf5cd15245f7e88153f9
-vendor/lib64/libpwirisIoctlWrapper.so|fadcd4d48175c9d5853697135107a472ff3a38b2
-vendor/lib64/libpwirisPCS.so|346cc45c16c72df58dd6fd0a859048c26f497ae5
-vendor/lib64/libpwirispq.so|37117712c70af414c8739c79a38821147aa43d51
-vendor/lib64/libpwirisservice.so|2ba0ef2dc13b73d96b9f910250b39f935a17be94
-vendor/lib64/libpwirissoft.so|e97721812f6d23dc26e75523ccc2cc6bb5fda745
-vendor/lib64/libpwsnapdragoncolor.so|4795224f9b138dc4158aad221c5b813bf947b2a3
-vendor/lib64/libpwsoftirisPCS.so|dfb9adabbc9d3427442bd77549041098c0f9fe25
-vendor/lib64/vendor.pixelworks.hardware.display@1.0.so|1056e9fbcfc4974b50df2f63c698ca8b3fa20c94
-vendor/lib64/vendor.pixelworks.hardware.display@1.1.so|58a06adaba8540d3457d7fe55eb6e0f05662e363
-vendor/lib64/vendor.pixelworks.hardware.feature@1.0.so|3961793685b4ea2a8dcc51b1ee3b5f7728d3c97b
 
 # IRQ balance
 vendor/bin/msm_irqbalance
