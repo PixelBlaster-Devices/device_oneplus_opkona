@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/oneplus/sm8250-common/sm8250-common-vendor.mk)
 
 # Gcam
-$(call inherit-product, packages/apps/googlecamera/config.mk)
+# $(call inherit-product, packages/apps/googlecamera/config.mk)
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -329,8 +329,8 @@ PRODUCT_PACKAGES += \
     liboffloadhal
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.oneplus_kona
+# PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service.oneplus_kona
 
 # Media
 PRODUCT_COPY_FILES += \
