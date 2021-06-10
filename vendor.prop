@@ -145,6 +145,9 @@ vendor.display.use_smooth_motion=1
 # DRM
 drm.service.enabled=true
 
+# Dolby
+ro.vendor.dolby.dax.version=DAX3_3.5.1.28_r1
+
 # Fingerprint
 persist.vendor.qfp=true
 
