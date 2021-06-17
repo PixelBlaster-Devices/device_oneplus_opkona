@@ -26,3 +26,6 @@ ro.pb.camera=48MP+16MP+5MP92MP,16MP
 ro.pb.version=3.0
 ro.pb.codename=lemonkebab
 ro.pb.device=placeholdercuzitsininit
+
+# Camera
+ro.com.google.lens.oem_camera_package=com.oneplus.camera

@@ -19,3 +19,8 @@
 keyboard.hasAssociatedDisplay = 1
 keyboard.orientationAware = 1
 
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    vendor.oneplus.hardware.camera-V1.0-java
+
+LOCAL_PROGUARD_ENABLED := disabled
+
