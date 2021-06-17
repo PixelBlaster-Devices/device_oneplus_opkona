@@ -1,3 +1,9 @@
+on boot
+    mkdir /data/misc/aospa/ 0770 cameraserver audio
+    write /data/misc/aospa/client_package_name 0
+    chown cameraserver audio /data/misc/aospa/client_package_name
+    chmod 0644 /data/misc/aospa/client_package_name
+
 service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
     override
     interface android.hardware.camera.provider@2.4::ICameraProvider legacy/0

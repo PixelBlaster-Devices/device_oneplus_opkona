@@ -23,6 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
 
+# OnePlus Camera
+$(call inherit-product, vendor/oneplus/addons/camera/camera-vendor.mk)
+
 TARGET_KERNEL_VERSION := 4.19
 
 PRODUCT_BOARD_PLATFORM := kona
@@ -31,7 +34,6 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -115,8 +117,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    Snap \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    libcamera2ndk_vendor 
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -261,6 +263,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor
+
+# Remove Packages
+PRODUCT_PACKAGES += RemovePackages
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \

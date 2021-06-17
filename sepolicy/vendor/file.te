@@ -1,3 +1,6 @@
+# Data File
+type havoc_data_file, file_type, data_file_type,  core_data_file_type;
+
 # files
 type oem_file, file_type;
 type op1_file, file_type;
@@ -25,6 +28,7 @@ type sysfs_tri_state_key, sysfs_type, fs_type;
 type sysfs_vl53l1, fs_type, sysfs_type;
 type vendor_sysfs_video_call_on, fs_type, sysfs_type;
 type sysfs_color, fs_type, sysfs_type;
+type sysfs_oem, sysfs_type, fs_type;
 
 # Fingerprint
 type vendor_persist_fingerprint_file, file_type;

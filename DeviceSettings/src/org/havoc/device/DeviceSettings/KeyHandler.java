@@ -52,7 +52,7 @@ public class KeyHandler implements DeviceKeyHandler {
             VibrationEffect.get(VibrationEffect.EFFECT_DOUBLE_CLICK);
 
     public static final String CLIENT_PACKAGE_NAME = "com.oneplus.camera";
-    public static final String CLIENT_PACKAGE_PATH = "/data/misc/aosp/client_package_name";
+    public static final String CLIENT_PACKAGE_PATH = "/data/misc/aospa/client_package_name";
 
     private final Context mContext;
     private final AudioManager mAudioManager;
