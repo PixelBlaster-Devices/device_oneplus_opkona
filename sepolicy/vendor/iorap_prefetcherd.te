@@ -1,0 +1,1 @@
+allow iorap_prefetcherd aosp_data_file:file { read open };

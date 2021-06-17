@@ -1,3 +1,9 @@
+# brightness
+type sysfs_oem, sysfs_type, fs_type;
+
+# Data File
+type aosp_data_file, file_type, data_file_type,  core_data_file_type;
+
 # files
 type oem_file, file_type;
 type op1_file, file_type;
