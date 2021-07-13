@@ -49,28 +49,18 @@ public class KeyHandler implements DeviceKeyHandler {
 
         switch (scanCode) {
             case MODE_NORMAL:
-                if (currentRingerMode != AudioManager.RINGER_MODE_NORMAL) {
-                    doHapticFeedback(VibrationEffect.EFFECT_DOUBLE_CLICK);
-                    mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
-                } else {
-                    return event;
-                }
+                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
+                doHapticFeedback(MODE_NORMAL_EFFECT);
+                VolumeService.changeMediaVolume(mAudioManager, mContext);
                 break;
             case MODE_VIBRATION:
-                if (currentRingerMode != AudioManager.RINGER_MODE_VIBRATE) {
-                    doHapticFeedback(VibrationEffect.EFFECT_THUD);
-                    mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
-                } else {
-                    return event;
-                }
+                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
+                doHapticFeedback(MODE_VIBRATION_EFFECT);
+                VolumeService.changeMediaVolume(mAudioManager, mContext);
                 break;
             case MODE_SILENCE:
-                if (currentRingerMode != AudioManager.RINGER_MODE_SILENT) {
-                    doHapticFeedback(VibrationEffect.EFFECT_POP);
-                    mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_SILENT);
-                } else {
-                    return event;
-                }
+                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_SILENT);
+                VolumeService.changeMediaVolume(mAudioManager, mContext);
                 break;
             default:
                 return event;
