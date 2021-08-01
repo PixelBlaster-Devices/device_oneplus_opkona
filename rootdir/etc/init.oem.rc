@@ -417,6 +417,14 @@ on post-fs-data
     chown system system /sys/module/tpp/parameters/tpp_on
     chown system system /sys/module/tpp/parameters/strategy
 
+    # rock.lin@OPTI [OPTI-191] for power consumption
+    chown system system /sys/module/cpufreq_bouncing/parameters/enable
+    chown system system /sys/module/cpufreq_bouncing/parameters/config
+
+    # Jacky.Ho@OPTI 2020/09/30 add for [OPTI-85]
+    chown system system /sys/module/tpp/parameters/tpp_on
+    chown system system /sys/module/tpp/parameters/strategy
+
 # Ted.Lin@ASTI 2019/06/12 add for CONFIG_CONTROL_CENTER
     chown system system /dev/cc_ctl
     chown system system /proc/cc_ctl
@@ -476,6 +484,14 @@ service wififtmserver /vendor/bin/sh vendor/bin/wifi_ftm
     group root
     disabled
     oneshot
+
+# ted.lin@OPTU [OPTI-191] add for qcom boost config
+on property:vendor.post_boot.parsed=1
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/schedutil/target_loads
+    chown system system /sys/devices/system/cpu/cpu4/cpufreq/schedutil/target_loads
+    chown system system /sys/devices/system/cpu/cpu7/cpufreq/schedutil/target_loads
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/busy_up_thres
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/busy_down_thres
 
 on property:vendor.wlan.ftm.up=1
     start wififtmserver
