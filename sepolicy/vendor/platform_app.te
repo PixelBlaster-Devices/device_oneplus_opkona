@@ -18,4 +18,10 @@ dontaudit platform_app mnt_vendor_file:dir search;
 dontaudit platform_app vendor_hal_camera_postproc_hwservice:hwservice_manager find;
 
 binder_call(platform_app, hal_camera_default)
+allow platform_app mnt_vendor_file:dir search;
+allow platform_app default_android_service:service_manager find;
+allow platform_app vendor_file:file { read open getattr map execute };
+allow platform_app adsprpcd_file:file { read getattr open };
+allow platform_app vendor_default_prop:file { open getattr map };
+
 r_dir_file(platform_app, oem_file)
