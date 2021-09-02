@@ -22,7 +22,49 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "OnePlus 9R"
+#include <stdint.h>
+#include <string.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int property_get(const char *key, char *value, const char *default_value);
+#ifdef __cplusplus
+}
+#endif
+
+
+#include "osi/include/osi.h"
+
+typedef struct {
+    const char *project_name;
+    const char *product_model;
+} device_t;
+
+static const device_t devices[] = {
+    {"19805", "OnePlus 8T"},
+    {"20809", "OnePlus 8T"},
+    {"20828", "OnePlus 9R"},
+};
+
+static inline const char *BtmGetDefaultName()
+{
+    char project_name[92];
+    property_get("ro.boot.project_name", project_name, "");
+
+    for (unsigned int i = 0; i < ARRAY_SIZE(devices); i++) {
+        device_t device = devices[i];
+
+        if (strcmp(device.project_name, project_name) == 0) {
+            return device.product_model;
+        }
+    }
+
+    // Fallback to ro.product.model
+    return "";
+}
+
+#define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 // Disables read remote device feature
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    32
