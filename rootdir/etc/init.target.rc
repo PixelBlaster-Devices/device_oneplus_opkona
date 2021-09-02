@@ -278,5 +278,5 @@ on property:persist.sys.oemlog.pullxlog=true
    setprop persist.sys.oemlog.pullxlog false
 # endif  /* VENDOR_EDIT */
 
-on property:ro.boot.project_codename=lemonades
+on property:ro.boot.project_codename=lemonkebab
     setprop persist.radio.multisim.config dsds
