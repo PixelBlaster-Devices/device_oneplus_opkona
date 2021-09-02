@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/oneplus/lemonades/lemonades-vendor.mk)
+$(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
 
 # Gcam
 # $(call inherit-product, packages/apps/googlecamera/config.mk)
@@ -45,7 +45,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_USES_AOSP_RECOVERY := true
 
 # AVB Key
-TARGET_USES_CUSTOM_AVB_KEY := true
+#TARGET_USES_CUSTOM_AVB_KEY := true
 
 # VNDK
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true

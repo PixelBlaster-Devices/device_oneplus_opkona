@@ -9,7 +9,7 @@
 
 set -e
 
-DEVICE=lemonades
+DEVICE=lemonkebab
 VENDOR=oneplus
 
 # Load extract_utils and do some sanity checks
@@ -29,7 +29,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
 
 # Warning headers and guards
-write_headers "lemonades"
+write_headers "lemonkebab"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" false

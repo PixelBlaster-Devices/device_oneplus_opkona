@@ -18,7 +18,7 @@ BUILD_BROKEN_DUP_RULES := true
 
 BOARD_VENDOR := oneplus
 
-DEVICE_PATH := device/oneplus/lemonades
+DEVICE_PATH := device/oneplus/lemonkebab
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -67,6 +67,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := OnePlus8T,OnePlus9R
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -237,4 +240,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/oneplus/lemonades/BoardConfigVendor.mk
+-include vendor/oneplus/lemonkebab/BoardConfigVendor.mk
