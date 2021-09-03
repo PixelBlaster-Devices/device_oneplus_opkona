@@ -50,8 +50,8 @@ void property_override(char const prop[], char const value[]) {
     __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void load_op8t(const char *model) {
-  property_override("ro.product.model", model);
+void load_op8t() {
+  property_override("ro.product.model", "OnePlus 8T");
   property_override("ro.product.name", "OnePlus8T");
   property_override("ro.build.product", "OnePlus8T");
   property_override("ro.product.device", "OnePlus8T");
@@ -59,8 +59,8 @@ void load_op8t(const char *model) {
   property_override("ro.display.series", "OnePlus 8T");
 }
 
-void load_op9r(const char *model) {
-  property_override("ro.product.model", model);
+void load_op9r() {
+  property_override("ro.product.model", "OnePlus 9R");
   property_override("ro.product.name", "OnePlus9R");
   property_override("ro.build.product", "OnePlus9R");
   property_override("ro.product.device", "OnePlus9R");
@@ -102,58 +102,15 @@ void vendor_load_properties() {
   switch(project_name){
     case 19805:
       /* OnePlus 8T */
-      switch (rf_version){
-        case 11:
-          /* China */
-          load_op8t("KB2000");
-          break;
-        case 13:
-          /* India */
-          load_op8t("KB2001");
-          break;
-        case 14:
-          /* Europe */
-          load_op8t("KB2003");
-          break;
-        case 15:
-          /* Global / US Unlocked */
-          load_op8t("KB2005");
-          break;
-        default:
-          /* Generic */
-          load_op8t("KB2005");
-          break;
-      }
+      load_op8t();
       break;
     case 20809:
       /* OnePlus 8T T-Mobile */
-      switch (rf_version){
-        case 12:
-          /* T-Mobile */
-          load_op8t("KB2007");
-          break;
-        default:
-          /* Generic */
-          load_op8t("KB2005");
-          break;
-      }
+      load_op8t();
       break;
     case 20828:
       /* OnePlus 9R */
-      switch (rf_version){
-      case 11:
-          /* China */
-          load_op9r("LE2100");
-          break;
-      case 13:
-          /* India */
-          load_op9r("LE2101");
-          break;
-      default:
-          /* Generic */
-          load_op9r("LE2101");
-          break;
-      }
+      load_op9r();
       break;
   }
 
