@@ -20,6 +20,16 @@ on post-fs-data && property:ro.boot.cust=9
     mount overlay overlay /system_ext/etc/permissions lowerdir=/oem/system_ext/etc/permissions:/system_ext/etc/permissions,context=u:object_r:system_file:s0
     mount overlay overlay /system_ext/etc/sysconfig lowerdir=/oem/system_ext/etc/sysconfig:/system_ext/etc/sysconfig,context=u:object_r:system_file:s0
 
-on property:ro.boot.product.hardware.sku=9
-    setprop persist.radio.multisim.config ssss
-    setprop persist.vendor.radio.uicc_se_enabled true
+# Force SIM configuration to DSDS only on the CN/IN/EU variants
+
+# China
+on property:ro.boot.rf_version=11
+    setprop persist.radio.multisim.config dsds
+
+# India
+on property:ro.boot.rf_version=13
+    setprop persist.radio.multisim.config dsds
+
+# Europe
+on property:ro.boot.rf_version=21
+    setprop persist.radio.multisim.config dsds
