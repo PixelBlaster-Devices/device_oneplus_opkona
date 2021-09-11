@@ -81,6 +81,18 @@
             </intent-filter>
         </service>
 
+        <!-- Dolby Tile -->
+        <service
+            android:name="org.havoc.device.DeviceSettings.DolbyTileService"
+            android:icon="@drawable/ic_dolby_atmos"
+            android:label="@string/dolby_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
         <!-- DozeSettings Activity -->
         <activity
             android:name="org.havoc.device.DeviceSettings.doze.DozeSettingsActivity"
