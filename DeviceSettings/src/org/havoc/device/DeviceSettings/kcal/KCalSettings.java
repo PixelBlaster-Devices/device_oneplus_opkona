@@ -23,7 +23,7 @@ import android.provider.Settings;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
-import com.havoc.support.preferences.SwitchPreference;
+import androidx.preference.SwitchPreference;
 
 import org.havoc.device.DeviceSettings.R;
 import org.havoc.device.DeviceSettings.ProperSeekBarPreference;

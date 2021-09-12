@@ -40,7 +40,7 @@ import android.view.WindowManager;
 import android.util.Log;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
-import com.havoc.support.preferences.SwitchPreference;
+import androidx.preference.SwitchPreference;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;

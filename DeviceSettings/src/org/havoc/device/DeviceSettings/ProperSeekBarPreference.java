@@ -156,7 +156,7 @@ public class ProperSeekBarPreference extends Preference implements SeekBar.OnSee
         mResetImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getContext(), getContext().getString(R.string.custom_seekbar_default_value_to_set, getTextValue(mDefaultValue)),
+                Toast.makeText(getContext(), getContext().getString(R.string.proper_seekbar_default_value_to_set, getTextValue(mDefaultValue)),
                         Toast.LENGTH_LONG).show();
             }
         });
@@ -219,7 +219,7 @@ public class ProperSeekBarPreference extends Preference implements SeekBar.OnSee
                 } else {
                     mValueTextView.setText(getContext().getString(R.string.proper_seekbar_value, getTextValue(mValue)) +
                         (mDefaultValueExists && mValue == mDefaultValue ? " (" +
-                        getContext().getString(R.string.custom_seekbar_default_value) + ")" : ""));
+                        getContext().getString(R.string.proper_seekbar_default_value) + ")" : ""));
                 }
             } else {
                 if (mDefaultValueTextExists && mDefaultValueExists && mTrackingValue == mDefaultValue) {
