@@ -13,7 +13,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.havoc.support.preferences.SwitchPreference
+    <SwitchPreference
         android:defaultValue="false"
         android:key="kcal_enabled"
         android:title="@string/kcal_enabled_title"
