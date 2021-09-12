@@ -43,35 +43,23 @@ public class KeyHandler implements DeviceKeyHandler {
         mVibrator = mContext.getSystemService(Vibrator.class);
     }
 
-    private boolean setRingerModeChecked(int newMode) {
-        int curMode = mAudioManager.getRingerModeInternal();
-
-        if (curMode == newMode)
-            return true;
-
-        mAudioManager.setRingerModeInternal(newMode);
-        return false;
-    }
-
     public KeyEvent handleKeyEvent(KeyEvent event) {
         final int scanCode = event.getScanCode();
         final int currentRingerMode = mAudioManager.getRingerModeInternal();
 
         switch (scanCode) {
             case MODE_NORMAL:
-                if (!setRingerModeChecked(AudioManager.RINGER_MODE_NORMAL)) {
-                    doHapticFeedback(MODE_NORMAL_EFFECT);
-                }
+                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_NORMAL);
+                doHapticFeedback(MODE_NORMAL_EFFECT);
                 VolumeService.changeMediaVolume(mAudioManager, mContext);
                 break;
             case MODE_VIBRATION:
-                if (!setRingerModeChecked(AudioManager.RINGER_MODE_VIBRATE)) {
-                    doHapticFeedback(MODE_VIBRATION_EFFECT);
-                }
+                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_VIBRATE);
+                doHapticFeedback(MODE_VIBRATION_EFFECT);
                 VolumeService.changeMediaVolume(mAudioManager, mContext);
                 break;
             case MODE_SILENCE:
-                setRingerModeChecked(AudioManager.RINGER_MODE_SILENT);
+                mAudioManager.setRingerModeInternal(AudioManager.RINGER_MODE_SILENT);
                 VolumeService.changeMediaVolume(mAudioManager, mContext);
                 break;
             default:
