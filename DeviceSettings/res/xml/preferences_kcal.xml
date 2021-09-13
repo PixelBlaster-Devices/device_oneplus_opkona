@@ -28,6 +28,7 @@
             android:dependency="kcal_enabled"
             android:key="color_red"
             android:max="256"
+            android:icon="@drawable/ic_r"
             android:title="@string/color_red" />
 
         <org.havoc.device.DeviceSettings.ProperSeekBarPreference
@@ -35,6 +36,7 @@
             android:dependency="kcal_enabled"
             android:key="color_green"
             android:max="256"
+            android:icon="@drawable/ic_g"
             android:title="@string/color_green" />
 
         <org.havoc.device.DeviceSettings.ProperSeekBarPreference
@@ -42,6 +44,7 @@
             android:dependency="kcal_enabled"
             android:key="color_blue"
             android:max="256"
+            android:icon="@drawable/ic_b"
             android:title="@string/color_blue" />
 
     </PreferenceCategory>
@@ -55,6 +58,7 @@
             android:dependency="kcal_enabled"
             android:key="saturation"
             android:max="255"
+            android:icon="@drawable/ic_s"
             android:title="@string/saturation" />
 
         <org.havoc.device.DeviceSettings.ProperSeekBarPreference
@@ -62,6 +66,7 @@
             android:dependency="kcal_enabled"
             android:key="value"
             android:max="255"
+            android:icon="@drawable/ic_v"
             android:title="@string/value" />
 
         <org.havoc.device.DeviceSettings.ProperSeekBarPreference
@@ -69,6 +74,7 @@
             android:dependency="kcal_enabled"
             android:key="contrast"
             android:max="255"
+            android:icon="@drawable/ic_c"
             android:title="@string/contrast" />
 
         <org.havoc.device.DeviceSettings.ProperSeekBarPreference
@@ -76,6 +82,7 @@
             android:dependency="kcal_enabled"
             android:key="hue"
             android:max="1536"
+            android:icon="@drawable/ic_h"
             android:title="@string/hue" />
 
     </PreferenceCategory>
