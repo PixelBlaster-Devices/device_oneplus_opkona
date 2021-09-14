@@ -144,6 +144,10 @@ on boot
     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
     chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
 
+    # Force Game Mode
+    chown system system /proc/touchpanel/force_game_switch_enable
+    chmod 0666 /proc/touchpanel/force_game_switch_enable
+
     # KCAL
     chown system graphics /sys/module/msm_drm/parameters/kcal_red
     chmod 0666 /sys/module/msm_drm/parameters/kcal_red

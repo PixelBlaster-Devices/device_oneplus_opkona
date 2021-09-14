@@ -58,12 +58,13 @@ public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
     public static final String PREF_DEVICE_KCAL = "device_kcal";
-    public static final String CATEGORY_DISPLAY = "display"; 
+    public static final String CATEGORY_DISPLAY = "display";
     public static final String KEY_HBM_SWITCH = "hbm";
     public static final String KEY_AUTO_HBM_SWITCH = "auto_hbm";
     public static final String KEY_AUTO_HBM_THRESHOLD = "auto_hbm_threshold";
     public static final String KEY_FPS_INFO = "fps_info";
     public static final String KEY_VIBSTRENGTH = "vib_strength";
+    public static final String KEY_GAME_SWITCH = "game_mode";
 
     private static final String PREF_DOZE = "advanced_doze_settings";
     private static final String KEY_ENABLE_DOLBY_ATMOS = "enable_dolby_atmos";
@@ -75,6 +76,7 @@ public class DeviceSettings extends PreferenceFragment
     private Preference mDozeSettings;
     private static SwitchPreference mFpsInfo;
     private static TwoStatePreference mHBMModeSwitch;
+    private static TwoStatePreference mGameModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
     private static TwoStatePreference mEnableDolbyAtmos;
     private Preference mKcal;
@@ -127,6 +129,11 @@ public class DeviceSettings extends PreferenceFragment
             startActivity(intent);
             return true;
         });
+
+        mGameModeSwitch = (TwoStatePreference) findPreference(KEY_GAME_SWITCH);
+        mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
+        mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
+        mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
 
         mVibrator = (Vibrator) getContext().getSystemService(Context.VIBRATOR_SERVICE);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getContext());

@@ -132,6 +132,22 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="touchpanel"
+        android:title="@string/touchpanel_title">
+
+        <SwitchPreference
+            android:key="game_mode"
+            android:icon="@drawable/ic_game_mode"
+            android:summary="@string/game_mode_summary"
+            android:title="@string/game_mode_title" />
+
+        <Preference
+            android:icon="@drawable/ic_info_outline"
+            android:summary="@string/game_mode_warning" 
+            android:persistent="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="vibrator"
         android:title="@string/category_vibrator">
 

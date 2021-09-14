@@ -105,6 +105,12 @@
     <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
     <string name="kcal_reset">Reset</string>
 
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">Touchpanel</string>
+    <string name="game_mode_title">Game mode</string>
+    <string name="game_mode_summary">Boost touch sampling rate for all applications</string>
+    <string name="game_mode_warning">Increases power consumption</string>
+
     <!-- Vibration Strength -->
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title_head">Strength</string>
