@@ -18,7 +18,6 @@
 package org.havoc.device.DeviceSettings;
 
 import android.annotation.TargetApi;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
@@ -50,7 +49,7 @@ public class GameModeTileService extends TileService {
         super.onStartListening();
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
         enabled =GameModeSwitch.isCurrentlyEnabled(this);
-        getQsTile().setState(enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
+        getQsTile().setState(GameModeSwitch.isSupported()? (enabled ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE) : Tile.STATE_UNAVAILABLE);
         getQsTile().updateTile();
 
     }

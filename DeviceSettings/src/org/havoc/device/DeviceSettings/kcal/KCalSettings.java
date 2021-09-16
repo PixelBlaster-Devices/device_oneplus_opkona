@@ -56,8 +56,13 @@ public class KCalSettings extends PreferenceFragment implements
         setPreferencesFromResource(R.xml.preferences_kcal, rootKey);
 
         mEnabled = findPreference(PREF_ENABLED);
-        mEnabled.setChecked(mPrefs.getBoolean(KCalSettings.PREF_ENABLED, false));        
-        mEnabled.setOnPreferenceChangeListener(this);
+        if (FileUtils.fileWritable(COLOR_FILE_RED)) {
+            mEnabled.setChecked(mPrefs.getBoolean(KCalSettings.PREF_ENABLED, false));        
+            mEnabled.setOnPreferenceChangeListener(this);
+        } else {
+            mEnabled.setEnabled(false);
+            mEnabled.setSummary(R.string.unsupported_feature);
+        }
 
         mRed = (ProperSeekBarPreference) findPreference(PREF_RED);
         mRed.setValue(mPrefs.getInt(PREF_RED, mRed.getValue()));        

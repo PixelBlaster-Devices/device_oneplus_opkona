@@ -131,7 +131,12 @@ public class DeviceSettings extends PreferenceFragment
         });
 
         mGameModeSwitch = (TwoStatePreference) findPreference(KEY_GAME_SWITCH);
-        mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
+        if (GameModeSwitch.isSupported()) {
+            mGameModeSwitch.setEnabled(true);
+        } else {
+            mGameModeSwitch.setEnabled(false);
+            mGameModeSwitch.setSummary(getString(R.string.unsupported_feature));
+        }
         mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
         mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
 
@@ -145,6 +150,7 @@ public class DeviceSettings extends PreferenceFragment
             mVibratorStrengthPreference.setOnPreferenceChangeListener(this);
         } else {
             mVibratorStrengthPreference.setEnabled(false);
+            mVibratorStrengthPreference.setSummary(getString(R.string.unsupported_feature));
         }
     }
 

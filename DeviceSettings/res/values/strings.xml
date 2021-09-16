@@ -111,6 +111,9 @@
     <string name="game_mode_summary">Boost touch sampling rate for all applications</string>
     <string name="game_mode_warning">Increases power consumption</string>
 
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">This feature is unavailable on current kernel</string>
+
     <!-- Vibration Strength -->
     <string name="category_vibrator">Vibrator</string>
     <string name="vib_strength_title_head">Strength</string>

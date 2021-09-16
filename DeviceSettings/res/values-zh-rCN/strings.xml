@@ -119,6 +119,9 @@
     <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
     <string name="kcal_reset">重置</string>
 
+    <!-- Unsupported feature -->
+    <string name="unsupported_feature">当前内核不支持该功能</string>
+    
     <!-- Vibration Slider -->
     <string name="category_vibrator">振动</string>
     <string name="vib_strength_title_head">强度</string>
