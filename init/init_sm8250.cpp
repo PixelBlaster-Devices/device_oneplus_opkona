@@ -57,6 +57,8 @@ void load_op8t() {
   property_override("ro.product.device", "OnePlus8T");
   property_override("ro.vendor.product.device", "OnePlus8T");
   property_override("ro.display.series", "OnePlus 8T");
+  property_override("ro.pb.device", "OnePlus 8T");
+  property_override("ro.pb.soc", "Snapdragon 865");
 }
 
 void load_op9r() {
@@ -66,6 +68,8 @@ void load_op9r() {
   property_override("ro.product.device", "OnePlus9R");
   property_override("ro.vendor.product.device", "OnePlus9R");
   property_override("ro.display.series", "OnePlus 9R");
+  property_override("ro.pb.device", "OnePlus 9R");
+  property_override("ro.pb.soc", "Snapdragon 870");
 }
 
 void load_dalvikvm_properties() {

@@ -18,3 +18,11 @@ ro.com.baidu.input.pad_port_r=14
 ro.com.baidu.input.pad_land_l=19
 ro.com.baidu.input.pad_land_r=19
 ro.com.baidu.input.pad_land_b=10
+
+# PixelBlaster
+ro.pb.maintainer=TheTablaster
+ro.pb.soc=placeholdercuzitsininit
+ro.pb.camera=48MP+16MP+5MP92MP,16MP
+ro.pb.version=3.0
+ro.pb.codename=lemonkebab
+ro.pb.device=placeholdercuzitsininit
