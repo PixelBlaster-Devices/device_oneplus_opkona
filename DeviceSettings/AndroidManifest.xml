@@ -34,6 +34,8 @@
         android:targetSdkVersion="29" />
 
     <application
+        android:defaultToDeviceProtectedStorage="true"
+        android:directBootAware="true"
         android:icon="@drawable/ic_settings_device"
         android:label="@string/device_title"
         android:theme="@style/AppTheme">
@@ -63,9 +65,11 @@
 
         <receiver 
             android:name="org.havoc.device.DeviceSettings.Startup" 
+            android:defaultToDeviceProtectedStorage="true"
+            android:directBootAware="true"
             android:enabled="true">
             <intent-filter android:priority="100" >
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
