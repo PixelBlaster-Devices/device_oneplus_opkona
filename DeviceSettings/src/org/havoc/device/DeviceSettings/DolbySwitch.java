@@ -39,6 +39,11 @@ public class DolbySwitch {
                 == COMPONENT_ENABLED_STATE_DEFAULT;
     }
 
+    public static boolean isCurrentlyEnabled(Context context, ComponentName componentName) {
+        return context.getPackageManager().getComponentEnabledSetting(componentName)
+                == COMPONENT_ENABLED_STATE_DEFAULT;
+    }
+
     public void setEnabled(boolean enabled) {
         Intent daxService = new Intent();
         daxService.setComponent(mComponentName);
