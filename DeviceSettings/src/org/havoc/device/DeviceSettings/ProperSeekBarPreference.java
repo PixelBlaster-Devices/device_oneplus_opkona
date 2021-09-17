@@ -88,7 +88,7 @@ public class ProperSeekBarPreference extends Preference implements SeekBar.OnSee
         }
 
         mSeekBar = new SeekBar(context, attrs);
-        setLayoutResource(R.layout.preference_custom_seekbar);
+        setLayoutResource(R.layout.preference_proper_seekbar);
     }
 
     public ProperSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {
