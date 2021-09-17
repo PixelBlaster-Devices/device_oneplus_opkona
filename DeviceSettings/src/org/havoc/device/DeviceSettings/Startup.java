@@ -26,8 +26,11 @@ import android.text.TextUtils;
 import androidx.preference.PreferenceManager;
 
 import org.havoc.device.DeviceSettings.kcal.KCalSettings;
+import org.havoc.device.DeviceSettings.DolbySwitch;
 
 public class Startup extends BroadcastReceiver {
+
+    private static final String ONE_TIME_DOLBY = "dolby_init_disabled";
 
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
@@ -36,16 +39,23 @@ public class Startup extends BroadcastReceiver {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_HBM_SWITCH, false);
         if (enabled) {
-        restore(HBMModeSwitch.getFile(), enabled);
-               }
+            restore(HBMModeSwitch.getFile(), enabled);
+        }
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_FPS_INFO, false);
         if (enabled) {
             context.startService(new Intent(context, FPSInfoService.class));
+        }
         enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_GAME_SWITCH, false);
         if (enabled) {
-        restore(GameModeSwitch.getFile(), enabled);
-               }
-       }
+            restore(GameModeSwitch.getFile(), enabled);
+        }
+        enabled = sharedPrefs.getBoolean(ONE_TIME_DOLBY, false);
+        if (!enabled) {
+            // we want to disable it by default, only once.
+            DolbySwitch dolbySwitch = new DolbySwitch(context);
+            dolbySwitch.setEnabled(false);
+            sharedPrefs.edit().putBoolean(ONE_TIME_DOLBY, true).apply();
+        }
         org.havoc.device.DeviceSettings.doze.Utils.checkDozeService(context);
         DeviceSettings.restoreVibStrengthSetting(context);
         KCalSettings.restore(context);

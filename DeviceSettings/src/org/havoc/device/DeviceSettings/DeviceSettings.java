@@ -53,6 +53,7 @@ import org.havoc.device.DeviceSettings.FileUtils;
 import org.havoc.device.DeviceSettings.doze.DozeSettingsActivity;
 import org.havoc.device.DeviceSettings.FPSInfoService;
 import org.havoc.device.DeviceSettings.kcal.KCalSettingsActivity;
+import org.havoc.device.DeviceSettings.DolbySwitch;
 
 public class DeviceSettings extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -73,6 +74,7 @@ public class DeviceSettings extends PreferenceFragment
     private static final long testVibrationPattern[] = {0,50};
     public static final String DEFAULT = "3";
 
+    private DolbySwitch mDolbySwitch;
     private Preference mDozeSettings;
     private static SwitchPreference mFpsInfo;
     private static TwoStatePreference mHBMModeSwitch;
@@ -120,7 +122,9 @@ public class DeviceSettings extends PreferenceFragment
         mFpsInfo.setChecked(isFPSOverlayRunning());
         mFpsInfo.setOnPreferenceChangeListener(this);
 
+        mDolbySwitch = new DolbySwitch(this.getContext());
         mEnableDolbyAtmos = (TwoStatePreference) findPreference(KEY_ENABLE_DOLBY_ATMOS);
+        mEnableDolbyAtmos.setChecked(mDolbySwitch.isCurrentlyEnabled());
         mEnableDolbyAtmos.setOnPreferenceChangeListener(this);
 
         mKcal = findPreference(PREF_DEVICE_KCAL);
@@ -173,21 +177,7 @@ public class DeviceSettings extends PreferenceFragment
                 this.getContext().stopService(fpsinfo);
             }
         } else if (preference == mEnableDolbyAtmos) {
-            boolean enabled = (Boolean) newValue;
-            Intent daxService = new Intent();
-            ComponentName name = new ComponentName("com.dolby.daxservice", "com.dolby.daxservice.DaxService");
-            daxService.setComponent(name);
-            if (enabled) {
-                // enable service component and start service
-                this.getContext().getPackageManager().setComponentEnabledSetting(name,
-                        PackageManager.COMPONENT_ENABLED_STATE_DEFAULT, 0);
-                this.getContext().startService(daxService);
-            } else {
-                // disable service component and stop service
-                this.getContext().stopService(daxService);
-                this.getContext().getPackageManager().setComponentEnabledSetting(name,
-                        PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
-            }
+            mDolbySwitch.setEnabled((Boolean) newValue);
         } else if (preference == mAutoHBMSwitch) {
             Boolean enabled = (Boolean) newValue;
             SharedPreferences.Editor prefChange = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
