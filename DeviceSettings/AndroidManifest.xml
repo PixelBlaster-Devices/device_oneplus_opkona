@@ -84,7 +84,7 @@
         <!-- Dolby Tile -->
         <service
             android:name="org.havoc.device.DeviceSettings.DolbyTileService"
-            android:icon="@drawable/ic_dolby_atmos"
+            android:icon="@drawable/ic_dolby"
             android:label="@string/enable_dolby_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
