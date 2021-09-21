@@ -1,10 +1,19 @@
 # Allow system_server to read Fast Charging status
 allow system_server vendor_sysfs_battery_supply:file { getattr open read };
+allow system_server proc_touchpanel:dir { search };
 
-r_dir_file(system_server, sysfs_battery_supply)
-allow system_server sysfs_battery_supply:file { getattr open read write };
-allow system_server hal_cameraHIDL_hwservice:hwservice_manager find;
 binder_call(system_server, hal_cameraHIDL_default)
 
 allow system_server app_zygote:process { getattr getpgid };
-allow system_server havoc_data_file:file r_file_perms;
+
+allow system_server proc_touchpanel:dir { search };
+
+allow system_server vendor_proc_shs:dir { search };
+
+allow system_server proc_touchpanel:dir r_dir_perms;
+
+allow system_server hal_cameraHIDL_hwservice:hwservice_manager find;
+
+allow system_server aosp_data_file:file r_file_perms;
+
+allow system_server vendor_camera_prop:file { read };

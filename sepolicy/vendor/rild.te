@@ -15,3 +15,4 @@ allow rild proc_net:file w_file_perms;
 set_prop(rild, vendor_rild_prop)
 
 allow rild vendor_pd_locater_dbg_prop:file { read };
+allow rild vendor_default_prop:file { open read getattr map};

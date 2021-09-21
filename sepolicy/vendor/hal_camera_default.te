@@ -16,14 +16,29 @@ allow hal_camera_default vl53l1_device:chr_file rw_file_perms;
 
 allow hal_camera_default proc_meminfo:file r_file_perms;
 allow hal_camera_default vendor_sysfs_video_call_on:file rw_file_perms;
+allow hal_camera_default cgroup:file { getattr };
 
 # Allow camera to read over /dev/adsprpc-smd-secure 
-allow hal_camera_default vendor_xdsp_device:chr_file { ioctl read write open };
+allow hal_camera_default vendor_xdsp_device:chr_file { read write open ioctl };
 
 allow hal_camera_default cgroup:file getattr;
 allow hal_camera_default hal_cameraHIDL_hwservice:hwservice_manager find;
 allow hal_camera_default public_adsprpcd_file:file { read open getattr };
 
+allow hal_camera_default platform_app:binder { call transfer };
+
+allow hal_camera_default platform_app:binder { call transfer };
+
+allow hal_camera_default vendor_hal_qspmhal_hwservice:hwservice_manager { find };
+allow hal_camera_default vendor_hal_qspmhal_default:binder { call };
+allow hal_camera_default aac_drc_prop:file { getattr  map  open };
+allow hal_camera_default ab_update_gki_prop:file { getattr  open };
+
+binder_call(hal_camera_default, platform_app)
+
 get_prop(hal_camera_default, ctl_default_prop)
 get_prop(hal_camera_default, vendor_db_security_prop)
 get_prop(hal_camera_default, vendor_mmi_prop)
+
+get_prop(hal_camera_default, vendor_video_prop)
+set_prop(hal_camera_default, vendor_video_prop)

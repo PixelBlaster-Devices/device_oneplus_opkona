@@ -1,0 +1,2 @@
+binder_call(surfaceflinger, hal_display_default)
+typeattribute surfaceflinger hal_display_client;

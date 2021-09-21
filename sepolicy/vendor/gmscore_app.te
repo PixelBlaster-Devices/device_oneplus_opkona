@@ -1,0 +1,6 @@
+allow gmscore_app linkerconfig_file:dir { getattr };
+dontaudit gmscore_app hal_memtrack_hwservice:hwservice_manager { find };
+binder_call(gmscore_app, hal_memtrack_default);
+allow gmscore_app aac_drc_prop:file { getattr map open };
+allow gmscore_app bt_firmware_file:filesystem getattr;
+allow gmscore_app firmware_file:filesystem getattr;

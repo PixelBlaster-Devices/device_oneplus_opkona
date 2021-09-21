@@ -125,8 +125,8 @@
 /(vendor|system/vendor)/lib64/libhta_hexagon_runtime\.so                                u:object_r:same_process_hal_file:s0
 
 # Data files
-/data/reserve-lib(/.*)?                             u:object_r:apk_data_file:s0
-/data/misc/havoc/client_package_name                u:object_r:havoc_data_file:s0
+/data/reserve-lib(/.*)?    u:object_r:apk_data_file:s0
+/data/misc/aospa/client_package_name                u:object_r:aosp_data_file:s0
 
 # Devices
 /dev/byte-cntr            u:object_r:byte_cntr_device:s0
@@ -146,14 +146,10 @@
 /dev/wlchg                u:object_r:wlchg_device:s0
 
 # Display Modes
+/sys/devices/platform/soc/ae00000\.qcom\,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en    u:object_r:sysfs_dm:s0
 /sys/devices/platform/soc/ae00000\.qcom\,mdss_mdp/drm/card0/card0-DSI-1/hbm               u:object_r:sysfs_dm:s0
 
 # HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.oneplus_kona            u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.oneplus_kona    u:object_r:hal_lineage_fod_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.0-service\.oneplus_kona                          u:object_r:hal_lineage_livedisplay_qti_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.powershare@1\.0-service\.oneplus_kona                           u:object_r:hal_lineage_powershare_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.oneplus_kona                                u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.camera@1\.0-service                                   u:object_r:hal_cameraHIDL_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.CameraMDMHIDL@1\.0-service                            u:object_r:hal_cameraHIDL_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.oneplus\.hardware\.display@1\.0-service                                  u:object_r:hal_display_default_exec:s0

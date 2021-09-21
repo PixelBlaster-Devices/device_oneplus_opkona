@@ -1,0 +1,34 @@
+allow vendor_hal_perf_default sysfs_devices_system_cpu:dir r_dir_perms;
+allow vendor_hal_perf_default sysfs_devices_system_cpu:file rw_file_perms;
+
+allow vendor_hal_perf_default vendor_sysfs_devfreq:dir r_dir_perms;
+allow vendor_hal_perf_default vendor_sysfs_devfreq:file rw_file_perms;
+
+allow vendor_hal_perf_default vendor_sysfs_msm_perf:dir r_dir_perms;
+allow vendor_hal_perf_default vendor_sysfs_msm_perf:file rw_file_perms;
+
+allow vendor_hal_perf_default system_server:file { read getattr open };
+allow vendor_hal_perf_default system_server:dir { read search open };
+
+allow vendor_hal_perf_default proc_zoneinfo:file { create };
+
+allow vendor_hal_perf_default sysfs:dir { add_name };
+
+allow vendor_hal_perf_default sysfs:file { create };
+
+allow vendor_hal_perf_default sysfs_devices_system_cpu:dir { add_name };
+
+allow vendor_hal_perf_default sysfs_devices_system_cpu:file { create };
+
+allow vendor_hal_perf_default vendor_sysfs_devfreq:dir { add_name };
+
+allow vendor_hal_perf_default vendor_sysfs_devfreq:file { create };
+
+allow vendor_hal_perf_default vendor_sysfs_msm_perf:dir { add_name };
+
+allow vendor_hal_perf_default vendor_sysfs_msm_perf:file { create };
+
+allow vendor_hal_perf_default vendor_sysfs_kgsl:dir { add_name };
+
+allow vendor_hal_perf_default vendor_sysfs_kgsl:file { create };
+allow vendor_hal_perf_default vendor_hal_perf_default:capability sys_admin;

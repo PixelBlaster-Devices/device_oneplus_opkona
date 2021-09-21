@@ -1,0 +1,1 @@
+allow vendor_thermal-engine vendor_thermal-engine:capability sys_admin;
