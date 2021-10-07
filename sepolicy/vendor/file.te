@@ -28,3 +28,5 @@ type sysfs_color, fs_type, sysfs_type;
 
 # Fingerprint
 type vendor_persist_fingerprint_file, file_type;
+type hal_lineage_fod_default, domain;
+type hal_lineage_fod_default_exec, exec_type, vendor_file_type, file_type;
