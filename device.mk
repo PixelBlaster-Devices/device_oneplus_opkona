@@ -26,6 +26,9 @@ $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
 # Gcam
 # $(call inherit-product, packages/apps/googlecamera/config.mk)
 
+# Camera
+PRODUCT_PACKAGES += SnapdragonCamera2
+
 PRODUCT_BOARD_PLATFORM := kona
 PRODUCT_USES_QCOM_HARDWARE := true
 
