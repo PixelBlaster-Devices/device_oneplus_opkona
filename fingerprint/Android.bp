@@ -26,6 +26,7 @@ cc_binary {
 cc_library_static {
     name: "libudfps_extension.oneplus_kona",
     srcs: ["UdfpsExtension.cpp"],
+    whole_static_libs: ["vendor.oneplus.hardware.display@1.0"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include",
     ],
