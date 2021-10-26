@@ -66,6 +66,7 @@ persist.radio.snapshot_enabled=0
 persist.radio.snapshot_timer=0
 persist.rcs.otp_sms_port=0
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+persist.sys.fflag.override.settings_provider_model=false
 
 # Touchscreen
 persist.vendor.qti.inputopts.enable=true
