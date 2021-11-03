@@ -14,7 +14,8 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/org.havoc.device.DeviceSettings">
+	xmlns:settings="http://schemas.android.com/apk/res/org.havoc.device.DeviceSettings"
+	android.title="@string/device_title">
 
     <PreferenceCategory
         android:key="slider"

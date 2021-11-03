@@ -25,8 +25,6 @@ import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 import androidx.preference.PreferenceManager;
 
-import java.lang.IllegalArgumentException;
-
 @TargetApi(24)
 public class HBMModeTileService extends TileService {
 

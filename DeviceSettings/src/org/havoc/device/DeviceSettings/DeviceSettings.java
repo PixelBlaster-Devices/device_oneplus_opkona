@@ -18,32 +18,18 @@
 package org.havoc.device.DeviceSettings;
 
 import android.app.ActivityManager;
-import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.ComponentName;
 import android.content.Context;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.provider.Settings;
-import android.text.TextUtils;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
-import android.util.Log;
+import androidx.preference.ListPreference;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceManager;
-import androidx.preference.ListPreference;
-import androidx.preference.Preference;
-import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceGroup;
-import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
 import org.havoc.device.DeviceSettings.CustomSeekBarPreference;
 import org.havoc.device.DeviceSettings.SwitchPreference;
@@ -90,8 +76,6 @@ public class DeviceSettings extends PreferenceFragment
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
         addPreferencesFromResource(R.xml.main);
-
-        getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
 
         mMuteMedia = (TwoStatePreference) findPreference(KEY_MUTE_MEDIA);
         mMuteMedia.setChecked(PreferenceManager.getDefaultSharedPreferences(getContext()).getBoolean(DeviceSettings.KEY_MUTE_MEDIA, false));
@@ -243,17 +227,6 @@ public class DeviceSettings extends PreferenceFragment
                 Integer.parseInt(Utils.getFileValue(FILE_LEVEL, DEFAULT)));
             Utils.writeValue(FILE_LEVEL, String.valueOf(value));
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-        // Respond to the action bar's Up/Home button
-        case android.R.id.home:
-            getActivity().finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 
     private boolean isFPSOverlayRunning() {

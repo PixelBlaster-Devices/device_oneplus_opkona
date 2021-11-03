@@ -21,7 +21,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
-import androidx.preference.PreferenceManager;
 
 import org.havoc.device.DeviceSettings.DeviceSettings;
 

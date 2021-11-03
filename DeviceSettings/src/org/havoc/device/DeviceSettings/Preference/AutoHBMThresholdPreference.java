@@ -21,10 +21,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.AttributeSet;
-import android.util.Log;
-import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
-import androidx.preference.PreferenceViewHolder;
 import org.havoc.device.DeviceSettings.CustomSeekBarPreference;
 
 public class AutoHBMThresholdPreference extends CustomSeekBarPreference {

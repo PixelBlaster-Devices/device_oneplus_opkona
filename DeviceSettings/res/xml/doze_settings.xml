@@ -16,7 +16,13 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:settings="http://schemas.android.com/apk/res/org.havoc.device.DeviceSettings">
+	xmlns:settings="http://schemas.android.com/apk/res/org.havoc.device.DeviceSettings"
+        android:title="@string/ambient_display_title">
+
+    <com.android.settingslib.widget.MainSwitchPreference
+        android:defaultValue="false"
+        android:key="doze_enable"
+        android:title="@string/ambient_enable" />
 
     <org.havoc.device.DeviceSettings.SwitchPreference
         android:key="always_on_display"
