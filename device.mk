@@ -22,6 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
+$(call inherit-product, vendor/qcom/common/wfd/wfd-vendor.mk)
 
 # Gcam
 # $(call inherit-product, packages/apps/googlecamera/config.mk)
@@ -631,11 +632,13 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
+    libdisplayconfig.system.qti \
     libnl \
+    libqdMetaData.system \
     libwfdaac_vendor
 
-#PRODUCT_BOOT_JARS += \
- #   WfdCommon
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
