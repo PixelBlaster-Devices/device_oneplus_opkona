@@ -1,1 +1,9 @@
 allow init adsprpcd_file:file mounton;
+allow init vendor_hal_perf_default:binder { call };
+allow init hal_drm_hwservice:hwservice_manager { add find };
+allow init hal_power_service:service_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
+allow init vendor_hal_perf_hwservice:hwservice_manager find;
+allow init debugfs_tracing_debug:dir { mounton };
+allow init proc:file { write };
+allow init op2_file:dir { mounton };

@@ -24,3 +24,23 @@ get_prop(vendor_qti_init_shell, exported_system_prop)
 set_prop(vendor_qti_init_shell, ctl_default_prop)
 set_prop(vendor_qti_init_shell, vendor_memplus_prop)
 set_prop(vendor_qti_init_shell, vendor_set_wlan_prop)
+allow vendor_qti_init_shell configfs:dir { write };
+allow vendor_qti_init_shell kmsg_device:chr_file { write };
+allow vendor_qti_init_shell configfs:dir { add_name };
+allow vendor_qti_init_shell kmsg_device:chr_file { open };
+allow vendor_qti_init_shell configfs:file { create };
+allow vendor_qti_init_shell configfs:dir { create };
+allow vendor_qti_init_shell configfs:lnk_file { create };
+allow vendor_qti_init_shell sysfs:dir r_dir_perms;
+allow vendor_qti_init_shell sysfs:file rw_file_perms;
+allow vendor_qti_init_shell sysfs_devices_system_cpu:dir r_dir_perms;
+allow vendor_qti_init_shell sysfs_devices_system_cpu:file rw_file_perms;
+allow vendor_qti_init_shell sysfs_io_sched_tuneable:dir r_dir_perms;
+allow vendor_qti_init_shell sysfs_io_sched_tuneable:file rw_file_perms;
+allow vendor_qti_init_shell sysfs_project_info:dir r_dir_perms;
+allow vendor_qti_init_shell sysfs_project_info:file rw_file_perms;
+allow vendor_qti_init_shell sysfs_zram:dir r_dir_perms;
+allow vendor_qti_init_shell sysfs_zram:file rw_file_perms;
+allow vendor_qti_init_shell vendor_debugfs_wlan:file rw_file_perms;
+allow vendor_qti_init_shell vendor_sysfs_devfreq:dir r_dir_perms;
+allow vendor_qti_init_shell vendor_sysfs_devfreq:file rw_file_perms;

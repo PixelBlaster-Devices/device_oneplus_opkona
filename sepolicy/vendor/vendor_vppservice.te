@@ -1,0 +1,2 @@
+allow vendor_vppservice public_adsprpcd_file:file { read open getattr };
+allow vendor_vppservice public_adsprpcd_file:file { open read getattr };
