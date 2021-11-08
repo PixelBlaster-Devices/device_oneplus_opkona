@@ -1,2 +1,8 @@
 persist.nfc.                              u:object_r:vendor_nfc_prop:s0
 ro.gfx.driver.1                           u:object_r:graphics_config_prop:s0
+
+# RIL
+ro.ril.supportLTE                         u:object_r:radio_prop:s0
+ro.vendor.ril.svlte1x                     u:object_r:radio_prop:s0
+ro.vendor.ril.svdo                        u:object_r:radio_prop:s0
+vendor.oem.bt.addr                        u:object_r:vendor_radio_prop:s0
