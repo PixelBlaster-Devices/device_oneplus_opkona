@@ -1,2 +1,3 @@
 binder_call(surfaceflinger, hal_display_default)
 allow surfaceflinger hal_display_hwservice:hwservice_manager find;
+allow surfaceflinger init:binder { call };

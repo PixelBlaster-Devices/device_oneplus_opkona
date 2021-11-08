@@ -1,0 +1,2 @@
+allow vendor_dpmd vendor_default_prop:file { read open getattr map};
+allow vendor_dpmd vendor_diag_device:chr_file { read write open };

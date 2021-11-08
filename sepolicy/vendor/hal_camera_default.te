@@ -21,3 +21,6 @@ allow hal_camera_default cgroup:file { getattr };
 get_prop(hal_camera_default, ctl_default_prop)
 get_prop(hal_camera_default, vendor_db_security_prop)
 get_prop(hal_camera_default, vendor_mmi_prop)
+
+get_prop(hal_camera_default, vendor_video_prop)
+set_prop(hal_camera_default, vendor_video_prop)

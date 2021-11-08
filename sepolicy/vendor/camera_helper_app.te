@@ -1,0 +1,4 @@
+type camera_helper_app, domain;
+app_domain(camera_helper_app)
+
+allow camera_helper_app cameraserver_service:service_manager find;
