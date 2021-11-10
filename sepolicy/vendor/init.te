@@ -1,4 +1,3 @@
-allow init adsprpcd_file:file mounton;
 allow init vendor_hal_perf_default:binder { call };
 allow init hal_drm_hwservice:hwservice_manager { add find };
 allow init hal_power_service:service_manager add;
