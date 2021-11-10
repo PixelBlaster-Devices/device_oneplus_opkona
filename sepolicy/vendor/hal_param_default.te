@@ -23,4 +23,3 @@ get_prop(hal_param_default, build_prop)
 
 allow hal_param_default property_socket:sock_file { write };
 allow hal_param_default init:unix_stream_socket { connectto };
-allow hal_param_default bootloader_prop:property_service { set };

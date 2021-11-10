@@ -14,8 +14,5 @@ set_prop(vendor_init, vendor_oem_wifi_prop)
 set_prop(vendor_init, vendor_persist_camera_prop)
 allow vendor_init block_device:lnk_file setattr;
 allow vendor_init persist_debug_prop:file { read };
-allow vendor_init default_prop:file { read };
-allow vendor_init apk_data_file:dir { getattr read create r_dir_perms setattr};
-allow vendor_init default_prop:property_service { set };
 allow vendor_init proc_cmdline:file { getattr };
 allow vendor_init gsi_metadata_file:dir { search };

@@ -1,12 +1,9 @@
 allow init vendor_hal_perf_default:binder { call };
-allow init hal_drm_hwservice:hwservice_manager { add find };
-allow init hal_power_service:service_manager add;
 allow init hidl_base_hwservice:hwservice_manager add;
 allow init vendor_hal_perf_hwservice:hwservice_manager find;
 allow init debugfs_tracing_debug:dir { mounton };
 allow init proc:file { write };
 allow init op2_file:dir { mounton };
-allow init vendor_file:file { execute execute_no_trans };
 allow init same_process_hal_file:file { execute };
 allow init servicemanager:binder { call };
 allow init servicemanager:binder { transfer };
