@@ -28,7 +28,7 @@ $(call inherit-product, vendor/qcom/common/wfd/wfd-vendor.mk)
 # $(call inherit-product, packages/apps/googlecamera/config.mk)
 
 # Camera
-PRODUCT_PACKAGES += SnapdragonCamera2
+#PRODUCT_PACKAGES += SnapdragonCamera2
 
 PRODUCT_BOARD_PLATFORM := kona
 PRODUCT_USES_QCOM_HARDWARE := true
@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # OnePlus Camera
-$(call inherit-product-if-exists, vendor/oneplus/opcamera/opcamera-vendor.mk)
+$(call inherit-product, vendor/oneplus/addons/camera/camera-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
