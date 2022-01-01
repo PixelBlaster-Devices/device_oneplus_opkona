@@ -18,4 +18,12 @@
 <resources>
     <!-- Margin on the right side of the center clock -->
     <dimen name="status_bar_center_clock_padding_end">126px</dimen>
+
+        <!-- Alert Slider UI -->
+    <dimen name="tri_state_down_dialog_position">478.0px</dimen>
+    <dimen name="tri_state_down_dialog_position_l">478.0px</dimen>
+    <dimen name="tri_state_middle_dialog_position">353.0px</dimen>
+    <dimen name="tri_state_middle_dialog_position_l">353.0px</dimen>
+    <dimen name="tri_state_up_dialog_position">228.0px</dimen>
+    <dimen name="tri_state_up_dialog_position_l">228.0px</dimen>
 </resources>
