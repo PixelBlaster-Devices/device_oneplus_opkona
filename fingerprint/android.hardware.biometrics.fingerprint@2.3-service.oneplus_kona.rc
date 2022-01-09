@@ -6,3 +6,7 @@ service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.
     user system
     group system input uhid
     #writepid /dev/cpuset/system-background/tasks
+
+on boot
+    chown system system /sys/class/drm/card0-DSI-1/power_status
+    chmod 0666 /sys/class/drm/card0-DSI-1/power_status
