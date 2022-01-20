@@ -15,9 +15,11 @@ on init
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
     write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 20000
 
-    # create an uclamp group for camera-specific processes
-    write /dev/cpuctl/camera-daemon/cpu.uclamp.latency_sensitive 1
-    write /dev/cpuctl/camera-daemon/cpu.uclamp.min 0
+    mkdir /dev/cpuset/little
+    copy /dev/cpuset/cpus /dev/cpuset/little/cpus
+    copy /dev/cpuset/mems /dev/cpuset/little/mems
+    chown system system /dev/cpuset/little/tasks
+    chmod 0664 /dev/cpuset/little/tasks
 
     # BPF Just In Time compiler
     write /proc/sys/net/core/bpf_jit_enable 1
@@ -47,12 +49,6 @@ on property:vendor.post_boot.parsed=1
     write /dev/blkio/background/blkio.weight 200
     write /dev/blkio/blkio.group_idle 2000
     write /dev/blkio/background/blkio.group_idle 0
-
-    # Setup runtime uclamp
-    write /dev/cpuctl/foreground/cpu.uclamp.latency_sensitive 1
-    write /dev/cpuctl/foreground/cpu.uclamp.min 0
-    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
-    write /dev/cpuctl/top-app/cpu.uclamp.min 10
 
     # Enable PowerHAL hint processing
     setprop vendor.setup.power 1

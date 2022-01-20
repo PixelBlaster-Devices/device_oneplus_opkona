@@ -144,18 +144,6 @@
           "ResetOnInit":true
        },
        {
-          "Name":"TA_uClampBoost",
-          "Path":"/dev/cpuctl/top-app/cpu.uclamp.min",
-          "Values":[
-             "0",
-             "10",
-             "30",
-             "max"
-          ],
-          "DefaultIndex":1,
-          "ResetOnInit":true
-       },
-       {
           "Name":"CPUBWHystTriggerCount",
           "Path":"/sys/class/devfreq/soc:qcom,cpu-cpu-llcc-bw/bw_hwmon/hyst_trigger_count",
           "Values":[
@@ -266,14 +254,6 @@
           "HoldFd":true
        },
        {
-          "Name":"DisplayWakeup",
-          "Path":"/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup",
-          "Values":[
-             "1",
-             "0"
-          ]
-       },
-       {
           "Name":"PowerHALMainState",
           "Path":"vendor.powerhal.state",
           "Values":[
@@ -364,12 +344,6 @@
        },
        {
           "PowerHint":"INTERACTION",
-          "Node":"TA_uClampBoost",
-          "Duration":0,
-          "Value":"30"
-       },
-       {
-          "PowerHint":"INTERACTION",
           "Node":"CPUBWHistMemory",
           "Duration":0,
           "Value":"0"
@@ -409,12 +383,6 @@
           "Node":"CPULittleClusterMinFreq",
           "Duration":3000,
           "Value":"9999999"
-       },
-       {
-          "PowerHint":"LAUNCH",
-          "Node":"TA_uClampBoost",
-          "Duration":3000,
-          "Value":"max"
        },
        {
           "PowerHint":"LAUNCH",
@@ -505,12 +473,6 @@
           "Node":"GPUMaxFreq",
           "Duration":0,
           "Value":"670000000"
-       },
-       {
-          "PowerHint":"DISPLAY_UPDATE_IMMINENT",
-          "Node":"DisplayWakeup",
-          "Duration":60,
-          "Value":"1"
        }
     ]
  }
