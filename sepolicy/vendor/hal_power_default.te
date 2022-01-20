@@ -20,4 +20,23 @@ allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
 allow hal_power_default cgroup:dir search;
 allow hal_power_default cgroup:file rw_file_perms;
 
+allow hal_power_default proc:file { open };
+allow hal_power_default proc:file { write };
+allow hal_power_default latency_device:chr_file { write };
+
+allow hal_power_default {
+    sysfs_devices_system_cpu
+    sysfs_msm_subsys
+    proc_sched_energy_aware
+}:file rw_file_perms;
+allow hal_power_default latency_device:chr_file rw_file_perms;
+allow hal_power_default vendor_sysfs_kgsl:file { open read write };
+allow hal_power_default vendor_sysfs_devfreq:file { open read write };
+allow hal_power_default vendor_latency_device:chr_file { open read write };
+
+# The following folder is incidentally accessed by hal_power_default and is not needed.
+dontaudit hal_power_default cgroup:file read;
+
+allow hal_power_default sysfs_msm_subsys:dir { search };
+
 set_prop(hal_power_default, vendor_power_prop)
