@@ -147,6 +147,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+# QMI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect \
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
+
 # QTI components
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := all
