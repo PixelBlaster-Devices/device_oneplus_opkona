@@ -41,6 +41,9 @@ persist.vendor.color.matrix=2
 # DPM
 persist.vendor.dpmhalservice.enable=1
 
+# Fingerprint
+vendor.boot.fingerprintbstate=orange
+
 # GBoard Spacing
 ro.com.google.ime.kb_pad_port_b=1
 
