@@ -59,6 +59,9 @@ CAMERA_NEEDS_CLIENT_INFO_LIB := true
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus_kona
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
      $(DEVICE_PATH)/device_framework_matrix.xml \
