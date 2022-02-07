@@ -28,6 +28,10 @@ TARGET_KERNEL_VERSION := 4.19
 PRODUCT_BOARD_PLATFORM := kona
 PRODUCT_USES_QCOM_HARDWARE := true
 
+# Additional native libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
