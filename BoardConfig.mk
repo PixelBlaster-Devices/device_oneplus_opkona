@@ -84,6 +84,9 @@ AB_OTA_PARTITIONS += \
     vbmeta_system \
     vendor
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
