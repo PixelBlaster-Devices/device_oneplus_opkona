@@ -90,6 +90,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
+# Display
+PRODUCT_PACKAGES += \
+    vendor.oneplus.hardware.display@1.0.vendor \
+    vendor.oneplus.hardware.display@1.0
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.oneplus.fingerprint.extension@1.0
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
