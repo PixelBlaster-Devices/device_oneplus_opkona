@@ -182,6 +182,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     device/oneplus/lemonkebab
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
 
 # Update engine
 PRODUCT_PACKAGES += \
