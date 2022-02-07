@@ -61,6 +61,25 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.oneplus.camera.rc \
+    init.oneplus.display.rc \
+    init.oneplus.fingerprint.rc \
+    init.oneplus.haptics.rc \
+    init.oneplus.power.rc \
+    init.oneplus.telephony.rc \
+    init.oneplus.usb.rc \
+    init.qti.chg_policy.sh \
+    init.qti.dcvs.sh \
+    init.qti.ufs.rc \
+    init.target.rc \
+    ueventd.oneplus.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
 # QTI components
 TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := all
