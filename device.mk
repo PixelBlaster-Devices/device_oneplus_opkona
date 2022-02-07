@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.hardware.display@1.0.vendor \
     vendor.oneplus.hardware.display@1.0
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.4-service.clearkey
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     vendor.oneplus.fingerprint.extension@1.0
