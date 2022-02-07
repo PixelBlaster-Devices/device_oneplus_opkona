@@ -28,11 +28,12 @@
  */
 
 #include <android-base/properties.h>
-#include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <stdio.h>
-#include <sys/_system_properties.h>
+#include <stdlib.h>
+#include <sys/sysinfo.h>
 #include <sys/system_properties.h>
+#include <sys/_system_properties.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
@@ -49,5 +50,70 @@ void property_override(char const prop[], char const value[]) {
     __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
+void load_op8t() {
+  property_override("ro.product.model", "OnePlus 8T");
+  property_override("ro.product.name", "OnePlus8T");
+  property_override("ro.build.product", "OnePlus8T");
+  property_override("ro.product.device", "OnePlus8T");
+  property_override("ro.vendor.product.device", "OnePlus8T");
+  property_override("ro.display.series", "OnePlus 8T");
+}
+
+void load_op9r() {
+  property_override("ro.product.model", "OnePlus 9R");
+  property_override("ro.product.name", "OnePlus9R");
+  property_override("ro.build.product", "OnePlus9R");
+  property_override("ro.product.device", "OnePlus9R");
+  property_override("ro.vendor.product.device", "OnePlus9R");
+  property_override("ro.display.series", "OnePlus 9R");
+}
+
+void load_dalvikvm_properties() {
+  struct sysinfo sys;
+  sysinfo(&sys);
+  if (sys.totalram > 8192ull * 1024 * 1024) {
+    // from - phone-xhdpi-12288-dalvik-heap.mk
+    property_override("dalvik.vm.heapstartsize", "24m");
+    property_override("dalvik.vm.heapgrowthlimit", "384m");
+    property_override("dalvik.vm.heaptargetutilization", "0.42");
+    property_override("dalvik.vm.heapmaxfree", "56m");
+    }
+  else if(sys.totalram > 6144ull * 1024 * 1024) {
+    // from - phone-xhdpi-8192-dalvik-heap.mk
+    property_override("dalvik.vm.heapstartsize", "24m");
+    property_override("dalvik.vm.heapgrowthlimit", "256m");
+    property_override("dalvik.vm.heaptargetutilization", "0.46");
+    property_override("dalvik.vm.heapmaxfree", "48m");
+    }
+  else {
+    // from - phone-xhdpi-6144-dalvik-heap.mk
+    property_override("dalvik.vm.heapstartsize", "16m");
+    property_override("dalvik.vm.heapgrowthlimit", "256m");
+    property_override("dalvik.vm.heaptargetutilization", "0.5");
+    property_override("dalvik.vm.heapmaxfree", "32m");
+  }
+  property_override("dalvik.vm.heapsize", "512m");
+  property_override("dalvik.vm.heapminfree", "8m");
+}
+
 void vendor_load_properties() {
+  int project_name = stoi(android::base::GetProperty("ro.boot.project_name", ""));
+  int rf_version = stoi(android::base::GetProperty("ro.boot.rf_version", ""));
+  switch(project_name){
+    case 19805:
+      /* OnePlus 8T */
+      load_op8t();
+      break;
+    case 20809:
+      /* OnePlus 8T T-Mobile */
+      load_op8t();
+      break;
+    case 20828:
+      /* OnePlus 9R */
+      load_op9r();
+      break;
+  }
+
+  // dalvikvm props
+  load_dalvikvm_properties();
 }
