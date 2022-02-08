@@ -15,13 +15,16 @@
 
     <!-- Height of the status bar in landscape. The height should be
          Max((status bar content height + waterfall top size), top cutout size) -->
-    <dimen name="status_bar_height_landscape">82.0px</dimen>
+    <dimen name="status_bar_height_landscape">82px</dimen>
 
     <!-- Height of the status bar in portrait. The height should be
          Max((status bar content height + waterfall top size), top cutout size) -->
-    <dimen name="status_bar_height_portrait">104.0px</dimen>
+    <dimen name="status_bar_height_portrait">112px</dimen>
 
     <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">110px</dimen>
+    <dimen name="rounded_corner_radius">114px</dimen>
+
+    <!-- Height of area above QQS where battery/time go. -->
+    <dimen name="quick_qs_offset_height">112px</dimen>
 
 </resources>
