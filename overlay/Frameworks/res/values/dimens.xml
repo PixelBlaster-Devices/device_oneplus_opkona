@@ -27,4 +27,7 @@
     <!-- Height of area above QQS where battery/time go. -->
     <dimen name="quick_qs_offset_height">112px</dimen>
 
+    <!-- The rounded corner content padding. -->
+    <dimen name="rounded_corner_content_padding">8dp</dimen>
+
 </resources>
