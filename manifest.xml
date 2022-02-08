@@ -140,6 +140,7 @@
             <name>ISecureElement</name>
             <instance>SIM1</instance>
         </interface>
+        <fqname>@1.2::ISecureElement/eSE1</fqname>
         <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
     <hal format="hidl">
@@ -229,6 +230,15 @@
         <version>2.1</version>
         <interface>
             <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.nxp.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>INqNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
