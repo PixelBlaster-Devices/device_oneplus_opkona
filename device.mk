@@ -232,7 +232,21 @@ PRODUCT_PACKAGES += \
 
 # QTI components
 TARGET_BOARD_PLATFORM := kona
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    media-legacy \
+    nq-nfc \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    wfd
 
 # Power
 PRODUCT_PACKAGES += \
