@@ -26,6 +26,9 @@ $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
 # OnePlus Camera
 $(call inherit-product, vendor/oneplus/addons/camera/camera-vendor.mk)
 
+# Inherit OnePlus-fwk from vendor/oneplus/extras
+$(call inherit-product, vendor/oneplus/extras/OnePlus-fwk.mk)
+
 TARGET_KERNEL_VERSION := 4.19
 
 PRODUCT_BOARD_PLATFORM := kona
