@@ -1476,6 +1476,10 @@ vendor/firmware/Version_Alert_RTP.bin
 vendor/firmware/VZW_Alrwave_RTP.bin
 vendor/firmware/wentai24k_rtp.bin
 
+# Vibrator HAL
+vendor/lib/hw/vibrator.default.so
+vendor/lib64/hw/vibrator.default.so
+
 # VPP - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
 vendor/bin/vppservice|6c782d3a5aaacf0ac25abeab466a1f4878eeb2e4
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
