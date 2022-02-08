@@ -181,6 +181,7 @@ PRODUCT_PACKAGES += \
     OverlayFrameworks \
     OverlaySystemUI \
     OverlayFrameworksCAF \
+    OverlaySettings \
     WifiResTarget
 
 # QMI
