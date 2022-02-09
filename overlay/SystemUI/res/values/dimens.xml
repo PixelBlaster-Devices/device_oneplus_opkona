@@ -40,4 +40,12 @@
     <!-- The absolute side margins of quick settings -->
     <dimen name="rounded_corner_content_padding">30px</dimen>
 
+        <!-- Alert Slider UI -->
+    <dimen name="tri_state_down_dialog_position">478.0px</dimen>
+    <dimen name="tri_state_down_dialog_position_l">478.0px</dimen>
+    <dimen name="tri_state_middle_dialog_position">353.0px</dimen>
+    <dimen name="tri_state_middle_dialog_position_l">353.0px</dimen>
+    <dimen name="tri_state_up_dialog_position">228.0px</dimen>
+    <dimen name="tri_state_up_dialog_position_l">228.0px</dimen>
+
 </resources>
