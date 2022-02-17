@@ -14,3 +14,4 @@ allow dashd kmsg_device:chr_file rw_file_perms;
 r_dir_file(dashd, vendor_sysfs_battery_supply)
 r_dir_file(dashd, vendor_sysfs_usb_supply)
 r_dir_file(dashd, sysfs_dash_charger)
+allow dashd dashd:capability sys_admin;

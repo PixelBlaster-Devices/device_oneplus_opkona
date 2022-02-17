@@ -1,4 +1,4 @@
 allow crash_dump vendor_camera_prop:file { open getattr map };
-allow crash_dump init:process { ptrace };
 get_prop(crash_dump, ctl_default_prop)
 get_prop(crash_dump, hwservicemanager_prop)
+allow crash_dump crash_dump:capability sys_admin;

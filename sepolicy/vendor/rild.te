@@ -16,3 +16,4 @@ set_prop(rild, vendor_rild_prop)
 
 allow rild vendor_pd_locater_dbg_prop:file { read };
 allow rild vendor_default_prop:file { open read getattr map};
+allow rild vendor_pd_locater_dbg_prop:file { open read getattr map };
