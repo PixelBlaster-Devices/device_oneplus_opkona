@@ -1,2 +1,6 @@
 # Camera
 ro.com.google.lens.oem_camera_package=com.oneplus.camera
+
+# PixelBlaster
+ro.pb.maintainer=TheTablaster
+ro.pb.maintainertg=https://t.me/V3NK4135H
