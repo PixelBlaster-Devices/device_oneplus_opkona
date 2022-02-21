@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
 
 # OnePlus Camera
-$(call inherit-product, vendor/oneplus/addons/camera/camera-vendor.mk)
+#$(call inherit-product, vendor/oneplus/addons/camera/camera-vendor.mk)
 
 # Inherit OnePlus-fwk from vendor/oneplus/extras
 $(call inherit-product, vendor/oneplus/extras/OnePlus-fwk.mk)
@@ -125,7 +125,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
-    libcamera2ndk_vendor 
+    libcamera2ndk_vendor \
+    GoogleCamera \
+    privapp-permissions-gcam.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
