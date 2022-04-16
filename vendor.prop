@@ -42,7 +42,6 @@ dalvik.vm.heaptargetutilization=0.75
 
 # Display
 ro.vendor.display.sensortype=2
-vendor.display.enable_async_powermode=0
 vendor.display.use_layer_ext=1
 
 # DRM

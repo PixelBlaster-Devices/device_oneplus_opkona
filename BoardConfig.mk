@@ -61,6 +61,7 @@ CAMERA_NEEDS_CLIENT_INFO_LIB := true
 
 # Display
 TARGET_SCREEN_DENSITY := 420
+TARGET_USES_DISPLAY_POWER_ASYNC := false
 
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus_kona
