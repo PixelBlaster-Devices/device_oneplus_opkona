@@ -99,7 +99,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
 TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OnePlus8T,OnePlus9R,lemonkebab
+TARGET_OTA_ASSERT_DEVICE := kebab|OnePlus8T|oneplus8t|lemonades|OnePlus9R|oneplus9r|lemonkebab
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -174,13 +174,16 @@ SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
+#BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
+#BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 BOARD_AVB_VBMETA_SYSTEM := system system_ext
-BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
+BOARD_AVB_VBMETA_SYSTEM_KEY_PATH := /home/venkatesh/.android-certs/releasekey.key
 BOARD_AVB_VBMETA_SYSTEM_ALGORITHM := SHA256_RSA2048
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
+BOARD_AVB_ALGORITHM := SHA256_RSA2048
+BOARD_AVB_KEY_PATH := /home/venkatesh/.android-certs/releasekey.key
+
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
