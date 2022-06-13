@@ -223,9 +223,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml
-
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
