@@ -132,6 +132,9 @@ drm.service.enabled=true
 # Fingerprint
 persist.vendor.qfp=true
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
