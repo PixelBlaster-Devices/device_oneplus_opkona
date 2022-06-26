@@ -142,8 +142,6 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
-    vendor.oneplus.hardware.display@1.0.vendor \
-    vendor.oneplus.hardware.display@1.0 \
     libwfdaac_vendor \
     libwfdaac_vendor.vendor \
     libdisplayconfig.qti \

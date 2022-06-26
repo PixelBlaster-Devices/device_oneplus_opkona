@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
+            sed -i "s/\/my_product/\/product/" "${2}"
+            ;;
         vendor/lib/libgf_ud_hal.so|vendor/lib/libgf_g6_ud_hal.so|vendor/lib64/libgf_ud_hal.so|vendor/lib64/libgf_g6_ud_hal.so)
             sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${2}"
             ;;
