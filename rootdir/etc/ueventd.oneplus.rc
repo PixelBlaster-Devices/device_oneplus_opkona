@@ -1,2 +1,0 @@
-# Factory Reset Protection
-/dev/block/by-name/config 0600    system    system

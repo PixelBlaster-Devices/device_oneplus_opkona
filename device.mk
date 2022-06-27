@@ -200,19 +200,15 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.oneplus.camera.rc \
-    init.oneplus.display.rc \
-    init.oneplus.fingerprint.rc \
-    init.oneplus.haptics.rc \
-    init.oneplus.power.rc \
-    init.oneplus.telephony.rc \
-    init.oneplus.usb.rc \
+    init.oplus.hw.rc \
+    init.oplus.hw.rc.recovery \
+    init.oplus.rc \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.ufs.rc \
     init.target.rc \
     libinit_sm8250 \
-    ueventd.oneplus.rc
+    ueventd.oplus.rc \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
