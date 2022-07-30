@@ -186,9 +186,5 @@ ro.telephony.default_network=33,22
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
 
-# USB
-vendor.usb.diag.func.name=diag
-vendor.usb.use_ffs_mtp=0
-
 # WiFi
 wifi.aware.interface=wifi-aware0
