@@ -11,13 +11,6 @@ cc_library_static {
 }
 
 prebuilt_etc {
-    name: "init.qcom.rc",
-    src: "init.qcom.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.oplus.hw.rc",
     src: "init.oplus.hw.rc",
     sub_dir: "init",
@@ -30,13 +23,6 @@ prebuilt_etc {
     src: "init.oplus.rc",
     sub_dir: "init",
     device_specific: true,
-}
-
-prebuilt_etc {
-    name: "init.qcom.recovery.rc",
-    src: "init.qcom.recovery.rc",
-    sub_dir: "init",
-    recovery: true,
 }
 
 prebuilt_etc {
@@ -53,39 +39,8 @@ prebuilt_etc {
     device_specific: true,
 }
 
-prebuilt_etc {
-    name: "ueventd.qcom.rc",
-    filename: "ueventd.rc",
-    src: "ueventd.qcom.rc",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.class_main.sh",
-    src: "init.class_main.sh",
-    vendor: true,
-}
-
 sh_binary {
     name: "init.oplus.sh",
     src: "init.oplus.sh",
     device_specific: true,
-}
-
-sh_binary {
-    name: "init.qcom.early_boot.sh",
-    src: "init.qcom.early_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.post_boot.sh",
-    src: "init.qcom.post_boot.sh",
-    vendor: true,
-}
-
-sh_binary {
-    name: "init.qcom.sh",
-    src: "init.qcom.sh",
-    vendor: true,
 }
