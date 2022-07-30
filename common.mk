@@ -324,6 +324,7 @@ PRODUCT_PACKAGES += \
 TARGET_BOARD_PLATFORM := kona
 
 TARGET_COMMON_QTI_COMPONENTS := \
+    av \
     bt \
     perf
 

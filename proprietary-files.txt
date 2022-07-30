@@ -825,9 +825,6 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 
 # Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
-system_ext/lib64/libmmosal.so
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_c2.xml
 vendor/etc/media_codecs_kona.xml
@@ -2275,7 +2272,6 @@ system_ext/etc/seccomp_policy/wfdservice.policy|37994de64d6bd127898bd556cd614db4
 system_ext/etc/seccomp_policy/wfdservice64.policy|1e331272649395423b11c575892e0bdc9433b820
 system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
 system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so|7e262f2b5cdc53e6c444e176206eeaeff3423795
-system_ext/lib/libmmparser_lite.so|7171defd018c507a2e34784569eb9920a22f15cf
 system_ext/lib/libmmrtpdecoder.so|e15387b44fd9b3661d763d934663551ca30743d7
 system_ext/lib/libmmrtpencoder.so|dbf276471b60a706d76e12edde388ef887b27396
 system_ext/lib/libwfdavenhancements.so|69fc28642353f1503e7e578e1dd3d82728b72561
@@ -2296,7 +2292,6 @@ system_ext/lib/libwfduibcsinkinterface.so|25e3cd7b8fd106c401597e9d71f47006ca06b3
 system_ext/lib/libwfduibcsrc.so|09821648adb3275b2c2619af7581f35a47643ff5
 system_ext/lib/libwfduibcsrcinterface.so|0c98741c0d65b27acf73a8b1a742e433fbeb86f4
 system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|e0f696be97952f11f26d32dab54a11702c05e1bf
-system_ext/lib64/libmmparser_lite.so|1959f64d628f9c7dac476f4e32a4f9cae1443f76
 system_ext/lib64/libmmrtpdecoder.so|8bb6d0a8f31795ed913acd3e8cb2299ada7cd22c
 system_ext/lib64/libmmrtpencoder.so|fef79b731d9c2109f23ebc27575b6e057da8310f
 system_ext/lib64/libwfdavenhancements.so|4906965cc3c3df4f1185cd63ae4f624666216b06
