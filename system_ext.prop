@@ -24,9 +24,7 @@ persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
 
 # Display
-debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
-persist.debug.wfd.enable=1
 
 # CNE
 persist.vendor.cne.feature=1
