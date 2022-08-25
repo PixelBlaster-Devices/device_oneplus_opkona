@@ -2,3 +2,11 @@
 ro.config.media_vol_steps=30
 ro.config.vc_call_vol_steps=9
 ro.vendor.audio.sdk.fluencetype=fluence
+
+# Display
+persist.sys.sf.color_mode=0
+vendor.display.enable_async_powermode=0
+
+# Graphics
+debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-2000000

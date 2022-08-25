@@ -22,9 +22,6 @@ persist.bluetooth.bqr.choppy_threshold=9,6
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
 
-# Display
-debug.sf.latch_unsignaled=1
-
 # CNE
 persist.vendor.cne.feature=1
 
