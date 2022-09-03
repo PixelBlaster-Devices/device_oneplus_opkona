@@ -57,6 +57,9 @@ ro.surface_flinger.use_content_detection_for_refresh_rate=true
 # Incremental FS
 ro.incremental.enable=yes
 
+# Multi-gen LRU
+persist.device_config.mglru_native.lru_gen_config=all
+
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
 
