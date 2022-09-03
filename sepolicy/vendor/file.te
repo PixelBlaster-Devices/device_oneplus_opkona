@@ -12,7 +12,7 @@ type public_adsprpcd_file, file_type;
 type proc_direct_swappiness, fs_type, proc_type;
 type proc_swappiness, fs_type, proc_type;
 type proc_touchpanel, fs_type, proc_type;
-type proc_watermark_boost_factor, fs_type, proc_type;
+#type proc_watermark_boost_factor, fs_type, proc_type;
 type procfs_oem_wireless, fs_type, proc_type;
 
 # sysfs
