@@ -803,6 +803,11 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 
 # Media
+vendor/etc/media_codecs_kona.xml
+vendor/etc/media_codecs_kona_vendor.xml
+vendor/etc/media_codecs_performance_kona.xml
+vendor/etc/media_codecs_performance_kona_vendor.xml
+vendor/etc/media_codecs_vendor_audio.xml
 vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 
