@@ -134,6 +134,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
+PRODUCT_PRIVATE_SEPOLICY_DIRS += \
+    $(COMMON_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
