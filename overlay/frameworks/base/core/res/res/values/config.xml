@@ -36,4 +36,8 @@
 
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
+
+    <!-- Defines the sysfs attribute path used by the device
+         to enable/disable DC dimming. -->
+    <string name="config_deviceDcDimmingSysfsNode">/sys/kernel/oplus_display/dimlayer_bl_en</string>
 </resources>
