@@ -22,7 +22,9 @@ ro.soc.manufacturer=QTI
 ro.soc.model=SM8250
 
 # Crypto
+ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
 
 # Display
 vendor.display.disable_system_load_check=1
@@ -75,6 +77,9 @@ ro.telephony.default_network=33,22
 # Sensors
 persist.vendor.sensors.allow_non_default_discovery=true
 persist.vendor.sensors.sync_request=true
+
+# USB
+vendor.usb.product_string=OnePlus 9R
 
 # WiFi
 wifi.aware.interface=wifi-aware0

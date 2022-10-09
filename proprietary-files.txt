@@ -2,6 +2,14 @@
 ## from OnePlus 8 Pro (IN2025_11.C.33).
 
 # ACDBs
+odm/etc/acdbdata/Audio_Parameter_Version.txt
+odm/etc/acdbdata/Bluetooth_cal.acdb
+odm/etc/acdbdata/General_cal.acdb
+odm/etc/acdbdata/Global_cal.acdb
+odm/etc/acdbdata/Handset_cal.acdb
+odm/etc/acdbdata/Hdmi_cal.acdb
+odm/etc/acdbdata/Headset_cal.acdb
+odm/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP
@@ -69,6 +77,9 @@ vendor/lib/rfsa/adsp/libvdsuperphoto_skel.so
 # ANT+
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
+# Audio firmware
+odm/firmware/tfa98xx.cnt
+
 # Audio libraries
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -122,6 +133,31 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # Camera
 odm/etc/camera/fb_default
 odm/etc/camera/fwk_config.json
+odm/etc/camera/ashdr/ncf_pack.ncf
+odm/etc/camera/ashdr/ncf_pack_imx471.ncf
+odm/etc/camera/ashdr/ncf_pack_imx481.ncf
+odm/etc/camera/ashdr/ncf_pack_imx586.ncf
+odm/etc/camera/darksight/darksight_main.bin
+odm/etc/camera/darksight/darksight_ultrawide.bin
+odm/etc/camera/calibrationOutput_uw.bin
+odm/etc/camera/distortion_result.bin
+odm/lib64/camera/components/com.oneplus.node.cfrsnapshot.so
+odm/lib64/camera/components/com.oneplus.node.cfrvideo.so
+odm/lib64/camera/com.qti.sensormodule.holitech_gc02m1b.bin
+odm/lib64/camera/com.qti.sensormodule.qtech_imx481.bin
+odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin
+odm/lib64/camera/com.qti.sensormodule.shine_gc5035.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+odm/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin
+odm/lib64/camera/com.qti.tuned.qtech_imx481.bin
+odm/lib64/camera/com.qti.tuned.semco_imx586.bin
+odm/lib64/camera/com.qti.tuned.shine_gc5035.bin
+odm/lib64/camera/com.qti.tuned.truly_imx471.bin
+odm/lib64/camera/com.qti_lemonades.sensor.gc02m1b.so
+odm/lib64/camera/com.qti_lemonades.sensor.gc5035.so
+odm/lib64/camera/com.qti_lemonades.sensor.imx471.so
+odm/lib64/camera/com.qti_lemonades.sensor.imx481.so
+odm/lib64/camera/com.qti_lemonades.sensor.imx586.so
 odm/lib64/camera/components/com.qti.stats.pdlib.so
 odm/lib64/camera/components/libipebpsstriping.so
 odm/lib64/camera/fdconfigpreview.bin
@@ -481,6 +517,13 @@ vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml
 vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
 
+# Display eye protection data
+odm/etc/samsung1024_amb655x_eyeprotect_data.xml
+odm/etc/samsung1024_ana6706_cinema_eyeprotect_data.xml
+odm/etc/samsung1024_ana6706_colorful_eyeprotect_data.xml
+odm/etc/samsung1024_ana6706_eyeprotect_data.xml
+odm/etc/samsung1024_ana6706_srgb_eyeprotect_data.xml
+
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
@@ -580,6 +623,26 @@ odm/lib64/libgf_ud_hal_18865_G3_oplus.so
 odm/lib64/libgf_ud_hal_20801_G3_oplus.so
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
+# Fingerprint Firmware
+odm/vendor/firmware/gfp9638.b00
+odm/vendor/firmware/gfp9638.b01
+odm/vendor/firmware/gfp9638.b02
+odm/vendor/firmware/gfp9638.b03
+odm/vendor/firmware/gfp9638.b04
+odm/vendor/firmware/gfp9638.b05
+odm/vendor/firmware/gfp9638.b06
+odm/vendor/firmware/gfp9638.b07
+odm/vendor/firmware/gfp9638.mdt
+odm/vendor/firmware/gfp9678.b00
+odm/vendor/firmware/gfp9678.b01
+odm/vendor/firmware/gfp9678.b02
+odm/vendor/firmware/gfp9678.b03
+odm/vendor/firmware/gfp9678.b04
+odm/vendor/firmware/gfp9678.b05
+odm/vendor/firmware/gfp9678.b06
+odm/vendor/firmware/gfp9678.b07
+odm/vendor/firmware/gfp9678.mdt
+
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -659,11 +722,11 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 
-# Hotword Enrollment
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
-my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentOKGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+# Hotword Enrollment - from OnePlus 8 Pro
+product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|52b6a326e59e543daac9b8d6e960654095c0fb6b
+product/framework/com.android.hotwordenrollment.common.util.jar|24acd0045d66a689b9605d5ee008e65b442f7fdd
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|72de7f534469af61fa5881936ef749fd5d65ee75
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|45ff9d3250a0d2213052349174b4c22b8781e101
 
 # IMS - from renoir - 22.5.11
 system_ext/app/ImsRcsService/ImsRcsService.apk|d03d3142f3518e755d02ace26b17170218ed8b4b
@@ -769,6 +832,44 @@ vendor/firmware/ipa_uc.mdt
 # Iris
 odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
 odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc
+odm/etc/inparm/irissoft/inParm.lst
+odm/etc/inparm/irissoft/inParm10.txt
+odm/etc/inparm/irissoft/inParm11.txt
+odm/etc/inparm/irissoft/inParm12.txt
+odm/etc/inparm/irissoft/inParm14_a.txt
+odm/etc/inparm/irissoft/inParm14_b.txt
+odm/etc/inparm/irissoft/inParm14_c.txt
+odm/etc/inparm/irissoft/inParm16_center.txt
+odm/etc/inparm/irissoft/inParm16_down.txt
+odm/etc/inparm/irissoft/inParm16_up.txt
+odm/etc/inparm/irissoft/inParm17_center.txt
+odm/etc/inparm/irissoft/inParm17_down.txt
+odm/etc/inparm/irissoft/inParm17_up.txt
+odm/etc/inparm/irissoft/inParm18_center.txt
+odm/etc/inparm/irissoft/inParm18_down.txt
+odm/etc/inparm/irissoft/inParm18_up.txt
+odm/etc/inparm/irissoft/inParm1_center.txt
+odm/etc/inparm/irissoft/inParm1_down.txt
+odm/etc/inparm/irissoft/inParm1_up.txt
+odm/etc/inparm/irissoft/inParm2_center.txt
+odm/etc/inparm/irissoft/inParm2_down.txt
+odm/etc/inparm/irissoft/inParm2_up.txt
+odm/etc/inparm/irissoft/inParm3_center.txt
+odm/etc/inparm/irissoft/inParm3_down.txt
+odm/etc/inparm/irissoft/inParm3_up.txt
+odm/etc/inparm/irissoft/inParm4_center.txt
+odm/etc/inparm/irissoft/inParm4_down.txt
+odm/etc/inparm/irissoft/inParm4_up.txt
+odm/etc/inparm/irissoft/inParm5_center.txt
+odm/etc/inparm/irissoft/inParm5_down.txt
+odm/etc/inparm/irissoft/inParm5_up.txt
+odm/etc/inparm/irissoft/inParm6_center.txt
+odm/etc/inparm/irissoft/inParm6_down.txt
+odm/etc/inparm/irissoft/inParm6_up.txt
+odm/etc/inparm/irissoft/inParm8_a.txt
+odm/etc/inparm/irissoft/inParm8_b.txt
+odm/etc/inparm/irissoft/inParm8_c.txt
+odm/etc/irissoft.fw
 odm/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml
 odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml
 odm/lib64/libpwirisIoctlWrapper.so
@@ -790,6 +891,14 @@ vendor/lib64/libpwirishalwrapper.so
 # IRQ balance
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
+
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
+vendor/lib64/libqtikeymaster4.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.kona.so
@@ -871,6 +980,12 @@ vendor/lib64/libOmxMpeghEncSw.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
+
+# Perf
+system_ext/lib/libbeluga.so
+system_ext/lib/libdolphin.so
+system_ext/lib64/libbeluga.so
+system_ext/lib64/libdolphin.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -1042,6 +1157,18 @@ odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/bin/oplus_sensor_fb
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
 odm/etc/vintf/manifest/manifest_oplusSensor.xml
+odm/etc/sensor/config/kona_qrd_ak991x_0.json
+odm/etc/sensor/config/kona_qrd_alsps.json
+odm/etc/sensor/config/kona_qrd_bmi26x_0.json
+odm/etc/sensor/config/kona_qrd_cct.json
+odm/etc/sensor/config/kona_qrd_cct_rear.json
+odm/etc/sensor/config/kona_qrd_icm4x6xx.json
+odm/etc/sensor/config/kona_qrd_lps22hh_0.json
+odm/etc/sensor/config/kona_qrd_lsm6dso.json
+odm/etc/sensor/config/kona_qrd_mmc56x3x.json
+odm/etc/sensor/config/kona_qrd_sx933x_0.json
+odm/etc/sensor/config/kona_qrd_tcs3408_rear.json
+odm/etc/sensor/sensor_config.json
 odm/lib64/liboplus_service.so
 odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
@@ -1825,9 +1952,7 @@ odm/firmware/aw8697_haptic_172.bin
 odm/firmware/aw8697_haptic_174.bin
 odm/firmware/aw8697_haptic_235.bin
 odm/firmware/aw8697_haptic_235_19161.bin
-odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160HZ.bin
 odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_160Hz.bin
-odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162HZ.bin
 odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_162Hz.bin
 odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_164Hz.bin
 odm/firmware/aw8697_high_temp_high_humidity_channel_RTP_51_166Hz.bin
@@ -2221,6 +2346,7 @@ odm/lib64/libwvhidl.so
 vendor/lib64/libtrustedapploader.so
 
 # WiFi
+odm/etc/wifi/bdwlan.elf
 odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/bin/cnss-daemon
 vendor/etc/wifi/p2p_supplicant_overlay.conf
