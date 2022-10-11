@@ -141,6 +141,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 include hardware/oplus/sepolicy/qti/SEPolicy.mk
+include vendor/OnePlusLab/SEPolicy.mk
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/private
 
