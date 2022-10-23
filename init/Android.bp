@@ -96,3 +96,10 @@ sh_binary {
     src: "init.qcom.sh",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init_overlayfs.rc",
+    src: "init_overlayfs.rc",
+    sub_dir: "init",
+    vendor: true,
+}

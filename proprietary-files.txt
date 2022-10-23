@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 8 Pro (IN2025_11.C.33).
+## from OnePlus 9R (LE2101_11.C.33).
 
 # ACDBs
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -11,6 +11,16 @@ odm/etc/acdbdata/Hdmi_cal.acdb
 odm/etc/acdbdata/Headset_cal.acdb
 odm/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
+
+# ACDB (OP8) - from IN2025_11.C.33
+odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/19821/etc/acdbdata/Audio_Parameter_Version.txt|5dae6d81e12a32eb2c5b5e8eac658c96953b68e0
+odm/etc/acdbdata/Bluetooth_cal.acdb:odm/19821/etc/acdbdata/Bluetooth_cal.acdb|1de6ffe87b58e8255c4cd17f1cbeea4fa4053291
+odm/etc/acdbdata/General_cal.acdb:odm/19821/etc/acdbdata/General_cal.acdb|503e99949a60aa9ea24d0a2a00860dfab0f54536
+odm/etc/acdbdata/Global_cal.acdb:odm/19821/etc/acdbdata/Global_cal.acdb|e8b0a8bf0f5270f989f1c0b2010e56710414a54d
+odm/etc/acdbdata/Handset_cal.acdb:odm/19821/etc/acdbdata/Handset_cal.acdb|1b0b3a4b1812fcae1d92dee689a4ff75eda5c2be
+odm/etc/acdbdata/Hdmi_cal.acdb:odm/19821/etc/acdbdata/Hdmi_cal.acdb|6b73ba5d3bea840e6edd80d267422c1be1190185
+odm/etc/acdbdata/Headset_cal.acdb:odm/19821/etc/acdbdata/Headset_cal.acdb|475dfd826afb89dd017dd812c0a6825dc6fa6392
+odm/etc/acdbdata/Speaker_cal.acdb:odm/19821/etc/acdbdata/Speaker_cal.acdb|4431fad79aa869a4a8a627859c825c9c166d737d
 
 # ADSP
 vendor/bin/adsprpcd
@@ -79,6 +89,9 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio firmware
 odm/firmware/tfa98xx.cnt
+
+# Audio firmware (OP8) - from IN2025_11.C.33
+odm/firmware/tfa98xx.cnt:odm/19821/firmware/tfa98xx.cnt|0d658230278862d0a72645cf41492d5e47946d9a
 
 # Audio libraries
 vendor/lib/soundfx/libasphere.so
@@ -302,6 +315,25 @@ vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|7dc3f932216311875fb598c31cd94837c50cf32e|07034348534c394184ff3ae5809be0e7f222e165
+
+# Camera (OP8) - from IN2025_11.C.33
+odm/etc/camera/ashdr/ncf_pack_imx481.ncf:odm/19821/etc/camera/ashdr/ncf_pack_imx481.ncf|606c3f7ec2ce68d33b7391d74ebc253f4798ebc5
+odm/etc/camera/ashdr/ncf_pack_imx586.ncf:odm/19821/etc/camera/ashdr/ncf_pack_imx586.ncf|874710939387840238898134367d6ab6b7356e20
+odm/etc/camera/calibrationOutput_uw.bin:odm/19821/etc/camera/calibrationOutput_uw.bin|2e6182c30520f799bb1a24fb6f9a2bfba6a62e58
+odm/etc/camera/distortion_result.bin:odm/19821/etc/camera/distortion_result.bin|c761d6a63f80a526fe76c10da6774087f7746f80
+odm/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin:odm/19821/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin|71b9a43ac95fcefe4b9c534f96009f409cdbce17
+odm/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin:odm/19821/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin|9513be5f63bdedcaae9507d57380e0a36d5bac94
+odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin:odm/19821/lib64/camera/com.qti.sensormodule.semco_imx586.bin|4894b629f89fc4088b391b86fee472e2369faf89
+odm/lib64/camera/com.qti.sensormodule.shine_gc2375.bin:odm/19821/lib64/camera/com.qti.sensormodule.shine_gc2375.bin|35d247b496303a7a5133a2c488d2e15229f0736d
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin:odm/19821/lib64/camera/com.qti.sensormodule.truly_imx471.bin|bdefe56330d232af0c145b6496c9a24f8789017d
+odm/lib64/camera/com.qti.tuned.ofilm_imx481.bin:odm/19821/lib64/camera/com.qti.tuned.ofilm_imx481.bin|118704655aa8efe3ac486b16507fd263d2b92331
+odm/lib64/camera/com.qti.tuned.semco_imx586.bin:odm/19821/lib64/camera/com.qti.tuned.semco_imx586.bin|cd02f732ee3771f17410494dd87da222a62c036c
+odm/lib64/camera/com.qti.tuned.shine_gc2375.bin:odm/19821/lib64/camera/com.qti.tuned.shine_gc2375.bin|89fb9c4a25e41663ce1ddf3de62c89d0ef471773
+odm/lib64/camera/com.qti.tuned.truly_imx471.bin:odm/19821/lib64/camera/com.qti.tuned.truly_imx471.bin|a777b05cefd2148ebae7b03394abdd9bf5ff378d
+odm/lib64/camera/com.qti_instantnoodle.sensor.gc2375.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.gc2375.so|a1d688c6eac5dd08d56159ea47fe9b362cefa956
+odm/lib64/camera/com.qti_instantnoodle.sensor.imx471.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx471.so|3eb23febc3138a433dc0efceb44c579501a5217a
+odm/lib64/camera/com.qti_instantnoodle.sensor.imx481.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx481.so|0a3dc56fa9344af0a6492931d0b9ebccba2658e2
+odm/lib64/camera/com.qti_instantnoodle.sensor.imx586.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx586.so|f5589cb35f97d049488378f23bf67418ae7bc880
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -642,6 +674,26 @@ odm/vendor/firmware/gfp9678.b05
 odm/vendor/firmware/gfp9678.b06
 odm/vendor/firmware/gfp9678.b07
 odm/vendor/firmware/gfp9678.mdt
+
+# Fingerprint Firmware (OP8) - from IN2025_11.C.33
+odm/vendor/firmware/gfp9608.b00:odm/19821/vendor/firmware/gfp9608.b00
+odm/vendor/firmware/gfp9608.b01:odm/19821/vendor/firmware/gfp9608.b01
+odm/vendor/firmware/gfp9608.b02:odm/19821/vendor/firmware/gfp9608.b02
+odm/vendor/firmware/gfp9608.b03:odm/19821/vendor/firmware/gfp9608.b03
+odm/vendor/firmware/gfp9608.b04:odm/19821/vendor/firmware/gfp9608.b04
+odm/vendor/firmware/gfp9608.b05:odm/19821/vendor/firmware/gfp9608.b05
+odm/vendor/firmware/gfp9608.b06:odm/19821/vendor/firmware/gfp9608.b06
+odm/vendor/firmware/gfp9608.b07:odm/19821/vendor/firmware/gfp9608.b07
+odm/vendor/firmware/gfp9608.mdt:odm/19821/vendor/firmware/gfp9608.mdt
+odm/vendor/firmware/gfp9638.b00:odm/19821/vendor/firmware/gfp9638.b00
+odm/vendor/firmware/gfp9638.b01:odm/19821/vendor/firmware/gfp9638.b01
+odm/vendor/firmware/gfp9638.b02:odm/19821/vendor/firmware/gfp9638.b02
+odm/vendor/firmware/gfp9638.b03:odm/19821/vendor/firmware/gfp9638.b03
+odm/vendor/firmware/gfp9638.b04:odm/19821/vendor/firmware/gfp9638.b04
+odm/vendor/firmware/gfp9638.b05:odm/19821/vendor/firmware/gfp9638.b05
+odm/vendor/firmware/gfp9638.b06:odm/19821/vendor/firmware/gfp9638.b06
+odm/vendor/firmware/gfp9638.b07:odm/19821/vendor/firmware/gfp9638.b07
+odm/vendor/firmware/gfp9638.mdt:odm/19821/vendor/firmware/gfp9638.mdt
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
