@@ -33,60 +33,181 @@ void OverrideProperty(const char* name, const char* value) {
  * after the original property has been set.
  */
 void vendor_load_properties() {
-    auto device = GetProperty("ro.product.product.device", "");
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
+    auto prj_version = std::stoi(GetProperty("ro.boot.prj_version", "0"));
 
-    switch (rf_version) {
-        case 11: // CN
-            if (device == "OnePlus8") {
-                OverrideProperty("ro.product.product.model", "IN2010");
-            } else if (device == "OnePlus8T") {
-                OverrideProperty("ro.product.product.model", "KB2000");
-            } else if (device == "OnePlus8Pro") {
-                OverrideProperty("ro.product.product.model", "IN2020");
-            } else if (device == "OnePlus9R") {
-                OverrideProperty("ro.product.product.model", "LE2100");
-            }
-            break;
-        case 12: // TMO
-            if (device == "OnePlus8") {
-                OverrideProperty("ro.product.product.model", "IN2017");
-            } else if (device == "OnePlus8T") {
-                OverrideProperty("ro.product.product.model", "KB2007");
-            } else if (device == "OnePlus8Pro") {
-                OverrideProperty("ro.product.product.model", "IN2027");
-            }
-            break;
-        case 13: // IN
-            if (device == "OnePlus8") {
-                OverrideProperty("ro.product.product.model", "IN2011");
-            } else if (device == "OnePlus8T") {
-                OverrideProperty("ro.product.product.model", "KB2001");
-            } else if (device == "OnePlus8Pro") {
-                OverrideProperty("ro.product.product.model", "IN2021");
-            } else if (device == "OnePlus9R") {
-                OverrideProperty("ro.product.product.model", "LE2101");
-            }
-            break;
-        case 14: // EU
-            if (device == "OnePlus8") {
-                OverrideProperty("ro.product.product.model", "IN2013");
-            } else if (device == "OnePlus8T") {
-                OverrideProperty("ro.product.product.model", "KB2003");
-            } else if (device == "OnePlus8Pro") {
-                OverrideProperty("ro.product.product.model", "IN2023");
-            }
-            break;
-        case 15: // NA
-            if (device == "OnePlus8") {
-                OverrideProperty("ro.product.product.model", "IN2015");
-            } else if (device == "OnePlus8T") {
-                OverrideProperty("ro.product.product.model", "KB2005");
-            } else if (device == "OnePlus8Pro") {
-                OverrideProperty("ro.product.product.model", "IN2025");
-            }
-            break;
+
+    switch(prj_version){
+  	/* OnePlus 8 */
+    case 19821:
+	OverrideProperty("ro.product.product.device", "OnePlus8");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 8");
+  OverrideProperty("ro.oplus.project", "OP8");
+      switch (rf_version){
+          /* China */
+        case 11:
+          OverrideProperty("ro.product.product.model", "IN2010");
+          break;
+        case 13:
+          /* India */
+          OverrideProperty("ro.product.product.model", "IN2011");
+          break;
+        case 14:
+          /* Europe */
+          OverrideProperty("ro.product.product.model", "IN2013");
+          break;
+        case 15:
+          /* Global / US Unlocked */
+          OverrideProperty("ro.product.product.model", "IN2015");
+          break;
         default:
-            LOG(ERROR) << "Unexpected RF version: " << rf_version;
-    }
+          /* Generic */
+          OverrideProperty("ro.product.product.model", "IN2015");
+          break;
+      }
+      break;
+        /* OnePlus 8 T-Mobile */
+    case 19855:
+	OverrideProperty("ro.product.product.device", "OnePlus8");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 8");
+  OverrideProperty("ro.oplus.project", "OP8");
+      switch (rf_version){
+            /* T-Mobile */
+        case 12:
+          OverrideProperty("ro.product.product.model", "IN2017");
+          break;
+            /* Generic */
+        default:
+          OverrideProperty("ro.product.product.model", "IN2015");
+          break;
+      }
+      break;
+        /* OnePlus 8 Verizon */
+    case 19867:
+  OverrideProperty("ro.product.product.device", "OnePlus8");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 8");
+  OverrideProperty("ro.oplus.project", "OP8");
+      switch (rf_version){
+            /* T-Mobile */
+        case 25:
+          OverrideProperty("ro.product.product.model", "IN2019");
+          break;
+            /* Generic */
+        default:
+          OverrideProperty("ro.product.product.model", "IN2015");
+          break;
+      }
+      break;
+        /* OnePlus 8 Pro */
+    case 19811:
+	OverrideProperty("ro.product.product.device", "OnePlus8Pro");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 8 Pro");
+  OverrideProperty("ro.oplus.project", "OP8P");
+      switch (rf_version){
+          /* China */
+        case 11:
+          OverrideProperty("ro.product.product.model", "IN2020");
+          break;
+        case 13:
+          /* India */
+          OverrideProperty("ro.product.product.model", "IN2021");
+          break;
+        case 14:
+          /* Europe */
+          OverrideProperty("ro.product.product.model", "IN2023");
+          break;
+        case 15:
+          /* Global / US Unlocked */
+          OverrideProperty("ro.product.product.model", "IN2025");
+          break;
+        default:
+          /* Generic */
+          OverrideProperty("ro.product.product.model", "IN2025");
+          break;
+      }
+      break;
+       /* OnePlus 8T */
+    case 19805:
+	OverrideProperty("ro.product.product.device", "OnePlus8T");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 8T");
+  OverrideProperty("ro.oplus.project", "OP8T");
+      switch (rf_version){
+           /* China */
+        case 11:
+          OverrideProperty("ro.product.product.model", "KB2000");
+          break;
+            /* India */
+        case 13:
+          OverrideProperty("ro.product.product.model", "KB2001");
+          break;
+            /* Europe */
+        case 14:
+          OverrideProperty("ro.product.product.model", "KB2003");
+          break;
+            /* Global / US Unlocked */
+        case 15:
+          OverrideProperty("ro.product.product.model", "KB2005");
+          break;
+            /* Generic */
+        default:
+          OverrideProperty("ro.product.product.model", "KB2005");
+          break;
+      }
+      break;
+       /* OnePlus 8T T-Mobile */
+    case 20809:
+	OverrideProperty("ro.product.product.device", "OnePlus8T");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 8T");
+  OverrideProperty("ro.oplus.project", "OP8T");
+      switch (rf_version){
+            /* T-Mobile */
+        case 12:
+          OverrideProperty("ro.product.product.model", "KB2007");
+          break;
+            /* Generic */
+        default:
+          OverrideProperty("ro.product.product.model", "KB2005");
+          break;
+      }
+      break;
+      	/* OnePlus 9R */
+   case 20828:
+	OverrideProperty("ro.product.product.device", "OnePlus9R");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 9R");
+  OverrideProperty("ro.oplus.project", "OP9R");
+      switch (rf_version){
+            /* China */
+      case 11:
+          OverrideProperty("ro.product.product.model", "LE2100");
+          break;
+            /* India */
+      case 13:
+          OverrideProperty("ro.product.product.model", "LE2101");
+          break;
+            /* Generic */
+      default:
+          OverrideProperty("ro.product.product.model", "LE2101");
+          break;
+      }
+      break;
+   case 20838:
+	OverrideProperty("ro.product.product.device", "OnePlus9R");
+	OverrideProperty("bluetooth.device.default_name", "OnePlus 9R");
+  OverrideProperty("ro.oplus.project", "OP9R");
+      switch (rf_version){
+            /* China */
+      case 11:
+          OverrideProperty("ro.product.product.model", "LE2100");
+          break;
+            /* India */
+      case 13:
+          OverrideProperty("ro.product.product.model", "LE2101");
+          break;
+            /* Generic */
+      default:
+          OverrideProperty("ro.product.product.model", "LE2100");
+          break;
+      }
+      break;
+   }
 }

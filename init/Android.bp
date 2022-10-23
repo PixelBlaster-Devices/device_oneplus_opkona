@@ -51,3 +51,10 @@ sh_binary {
     src: "init.oplus.sh",
     device_specific: true,
 }
+
+prebuilt_etc {
+    name: "init_overlayfs.rc",
+    src: "init_overlayfs.rc",
+    sub_dir: "init",
+    vendor: true,
+}

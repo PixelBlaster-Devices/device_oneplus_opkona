@@ -1,0 +1,8 @@
+/(odm|vendor/odm)/19821/etc(/.*)?                          u:object_r:vendor_configs_file:s0
+/(vendor|system/vendor)/19821/etc(/.*)?                    u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/19821/lib(64)?/camera                    u:object_r:vendor_hal_file:s0
+/(odm|vendor/odm)/19811/etc(/.*)?                          u:object_r:vendor_configs_file:s0
+/(vendor|system/vendor)/19811/etc(/.*)?                    u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/19811/lib(64)?/camera                    u:object_r:vendor_hal_file:s0
+/(odm|vendor/odm)/20828/etc(/.*)?                          u:object_r:vendor_configs_file:s0
+/(odm|vendor/odm)/20828/lib(64)?/camera                    u:object_r:vendor_hal_file:s0
