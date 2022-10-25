@@ -1,27 +1,35 @@
 on post-fs-data && property:ro.boot.prj_version=19821 
     mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/19821/etc/acdbdata:/odm/etc/acdbdata
     mount overlay overlay /odm/firmware lowerdir=/odm/19821/firmware:/odm/firmware
+    mount overlay overlay /odm/etc/ lowerdir=/odm/19821/etc:/odm/etc
     mount overlay overlay /odm/etc/camera lowerdir=/odm/19821/etc/camera:/odm/etc/camera
     mount overlay overlay /odm/lib64/camera lowerdir=/odm/19821/lib64/camera:/odm/lib64/camera
     mount overlay overlay /odm/vendor/firmware lowerdir=/odm/19821/vendor/firmware:/odm/vendor/firmware
+    mount overlay overlay /vendor/etc/ lowerdir=/vendor/19821/etc:/vendor/etc
 
 on post-fs-data && property:ro.boot.prj_version=19855                                         
     mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/19821/etc/acdbdata:/odm/etc/acdbdata
     mount overlay overlay /odm/firmware lowerdir=/odm/19821/firmware:/odm/firmware
+    mount overlay overlay /odm/etc/ lowerdir=/odm/19821/etc:/odm/etc
     mount overlay overlay /odm/etc/camera lowerdir=/odm/19821/etc/camera:/odm/etc/camera
     mount overlay overlay /odm/lib64/camera lowerdir=/odm/19821/lib64/camera:/odm/lib64/camera
     mount overlay overlay /odm/vendor/firmware lowerdir=/odm/19821/vendor/firmware:/odm/vendor/firmware
+    mount overlay overlay /vendor/etc/ lowerdir=/vendor/19821/etc:/vendor/etc
 
 on post-fs-data && property:ro.boot.prj_version=19867                                         
     mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/19821/etc/acdbdata:/odm/etc/acdbdata
     mount overlay overlay /odm/firmware lowerdir=/odm/19821/firmware:/odm/firmware
+    mount overlay overlay /odm/etc/ lowerdir=/odm/19821/etc:/odm/etc
     mount overlay overlay /odm/etc/camera lowerdir=/odm/19821/etc/camera:/odm/etc/camera
     mount overlay overlay /odm/lib64/camera lowerdir=/odm/19821/lib64/camera:/odm/lib64/camera
     mount overlay overlay /odm/vendor/firmware lowerdir=/odm/19821/vendor/firmware:/odm/vendor/firmware
+    mount overlay overlay /vendor/etc/ lowerdir=/vendor/19821/etc:/vendor/etc
 
 on post-fs-data && property:ro.boot.prj_version=19811                                         
     mount overlay overlay /odm/etc/acdbdata lowerdir=/odm/19821/etc/acdbdata:/odm/etc/acdbdata
     mount overlay overlay /odm/firmware lowerdir=/odm/19821/firmware:/odm/firmware
+    mount overlay overlay /odm/etc/ lowerdir=/odm/19821/etc:/odm/etc
     mount overlay overlay /odm/etc/camera lowerdir=/odm/19821/etc/camera:/odm/etc/camera
     mount overlay overlay /odm/lib64/camera lowerdir=/odm/19821/lib64/camera:/odm/lib64/camera
     mount overlay overlay /odm/vendor/firmware lowerdir=/odm/19821/vendor/firmware:/odm/vendor/firmware
+    mount overlay overlay /vendor/etc/ lowerdir=/vendor/19821/etc:/vendor/etc

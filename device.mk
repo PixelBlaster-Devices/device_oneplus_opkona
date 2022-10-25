@@ -54,7 +54,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_mixer_paths.xml \
-    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml
+    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/etc/sound_trigger_platform_info.xml \
+    $(LOCAL_PATH)/audio_instantnoodle/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/19821/etc/audio_platform_info_intcodec.xml \
+    $(LOCAL_PATH)/audio_instantnoodle/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/19821/etc/mixer_paths.xml \
+    $(LOCAL_PATH)/audio_instantnoodle/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/19821/etc/sound_trigger_mixer_paths.xml \
+    $(LOCAL_PATH)/audio_instantnoodle/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_ODM)/19821/etc/sound_trigger_platform_info.xml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf
@@ -199,6 +203,15 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget \
+    OPlusFrameworksResKebab\
+    OPlusSettingsProviderResKebab \
+    OPlusSystemUIResKebab \
+    OPlusFrameworksResInstantnoodle \
+    OPlusSettingsProviderResInstantnoodle \
+    OPlusSystemUIResInstantnoodle \
+    OPlusFrameworksResInstantnoodlep \
+    OPlusSettingsProviderResInstantnoodlep \
+    OPlusSystemUIResInstantnoodlep \
     WifiResTarget
 
 # Partitions
