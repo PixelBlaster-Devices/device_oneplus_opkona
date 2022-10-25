@@ -170,7 +170,16 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResCommon \
-    OPlusSystemUIResTarget
+    OPlusSystemUIResTarget \
+    OPlusFrameworksResKebab\
+    OPlusSettingsProviderResKebab \
+    OPlusSystemUIResKebab \
+    OPlusFrameworksResInstantnoodle \
+    OPlusSettingsProviderResInstantnoodle \
+    OPlusSystemUIResInstantnoodle \
+    OPlusFrameworksResInstantnoodlep \
+    OPlusSettingsProviderResInstantnoodlep \
+    OPlusSystemUIResInstantnoodlep
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
