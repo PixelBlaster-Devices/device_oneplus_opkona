@@ -9,7 +9,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 
-DEVICE_PATH := device/oneplus/lemonkebab
+DEVICE_PATH := device/oneplus/opkona
 
 # A/B
 AB_OTA_UPDATER := true
@@ -49,7 +49,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OnePlus8T|OnePlus9R|lemonades|kebab|lemonkebab|LE2100|LE2101|KB2000|KB2001|KB2003|KB2005|KB2007|OnePlus8|instantnoodle|OnePlus8Pro|instantnoodlep
+TARGET_OTA_ASSERT_DEVICE := OnePlus8T|OnePlus9R|lemonades|kebab|lemonkebab|LE2100|LE2101|KB2000|KB2001|KB2003|KB2005|KB2007|OnePlus8|instantnoodle|OnePlus8Pro|instantnoodlep|opkona
 
 # Audio
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
@@ -63,8 +63,6 @@ TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
-DEVICE_PATH := device/oneplus/lemonkebab
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
@@ -185,4 +183,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/lemonkebab/BoardConfigVendor.mk
+include vendor/oneplus/opkona/BoardConfigVendor.mk
