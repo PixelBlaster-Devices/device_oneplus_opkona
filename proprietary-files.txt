@@ -22,6 +22,16 @@ odm/etc/acdbdata/Hdmi_cal.acdb:odm/19821/etc/acdbdata/Hdmi_cal.acdb|6b73ba5d3bea
 odm/etc/acdbdata/Headset_cal.acdb:odm/19821/etc/acdbdata/Headset_cal.acdb|475dfd826afb89dd017dd812c0a6825dc6fa6392
 odm/etc/acdbdata/Speaker_cal.acdb:odm/19821/etc/acdbdata/Speaker_cal.acdb|4431fad79aa869a4a8a627859c825c9c166d737d
 
+# ACDB (OP8P) - from IN2025_11.C.33
+odm/etc/acdbdata/Audio_Parameter_Version.txt:odm/19811/etc/acdbdata/Audio_Parameter_Version.txt|5b099a358a18f55cc0ace66799c7a3e1add12dc4
+odm/etc/acdbdata/Bluetooth_cal.acdb:odm/19811/etc/acdbdata/Bluetooth_cal.acdb|9e685bbf943514bf9151d32b6b16e2370ac85022
+odm/etc/acdbdata/General_cal.acdb:odm/19811/etc/acdbdata/General_cal.acdb|020f9ecf741eb17dc742e87f854d331e405840f5
+odm/etc/acdbdata/Global_cal.acdb:odm/19811/etc/acdbdata/Global_cal.acdb|dd4dc331ff5249d89e717e8b002049ea67c526d8
+odm/etc/acdbdata/Handset_cal.acdb:odm/19811/etc/acdbdata/Handset_cal.acdb|3e69087865ef73bdf0145915d8ff1fa5f0384c4c
+odm/etc/acdbdata/Hdmi_cal.acdb:odm/19811/etc/acdbdata/Hdmi_cal.acdb|482d92ae5086317a69b86336c4a290d95d5f6d98
+odm/etc/acdbdata/Headset_cal.acdb:odm/19811/etc/acdbdata/Headset_cal.acdb|dc756250007066e2537f3629aec45543ffdfaeb7
+odm/etc/acdbdata/Speaker_cal.acdb:odm/19811/etc/acdbdata/Speaker_cal.acdb|164ae3e124174628b2e5ba429a96e5da26b60b2d
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/etc/init/vendor.qti.adsprpc-service.rc
@@ -92,6 +102,9 @@ odm/firmware/tfa98xx.cnt
 
 # Audio firmware (OP8) - from IN2025_11.C.33
 odm/firmware/tfa98xx.cnt:odm/19821/firmware/tfa98xx.cnt|0d658230278862d0a72645cf41492d5e47946d9a
+
+# Audio firmware (OP8P) - from IN2025_11.C.33
+odm/firmware/tfa98xx.cnt:odm/19811/firmware/tfa98xx.cnt|6dcaa3ad00309c6e75fe3fc74a572d1a89435031
 
 # Audio libraries
 vendor/lib/soundfx/libasphere.so
@@ -334,6 +347,40 @@ odm/lib64/camera/com.qti_instantnoodle.sensor.gc2375.so:odm/19821/lib64/camera/c
 odm/lib64/camera/com.qti_instantnoodle.sensor.imx471.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx471.so|3eb23febc3138a433dc0efceb44c579501a5217a
 odm/lib64/camera/com.qti_instantnoodle.sensor.imx481.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx481.so|0a3dc56fa9344af0a6492931d0b9ebccba2658e2
 odm/lib64/camera/com.qti_instantnoodle.sensor.imx586.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx586.so|f5589cb35f97d049488378f23bf67418ae7bc880
+
+# Camera (OP8P) - from IN2025_11.C.33
+odm/etc/camera/ashdr/ncf_pack.ncf:odm/19811/etc/camera/ashdr/ncf_pack.ncf|1d64ee5e6ffc6d9a568432be6a9c74fd0fbf07a3
+odm/etc/camera/ashdr/ncf_pack_imx471.ncf:odm/19811/etc/camera/ashdr/ncf_pack_imx471.ncf|03c58aaba48ff82b25c2b54d814a0659b7d1fb2b
+odm/etc/camera/ashdr/ncf_pack_imx586.ncf:odm/19811/etc/camera/ashdr/ncf_pack_imx586.ncf|d7e48d250d8946907c5a16a188c0c45ad34fe8aa
+odm/etc/camera/ashdr/ncf_pack_imx689.ncf:odm/19811/etc/camera/ashdr/ncf_pack_imx689.ncf|8cf26f8a7b039f129bb93906eba960a133fe2460
+odm/etc/camera/ashdr/ncf_pack_s5k3m5.ncf:odm/19811/etc/camera/ashdr/ncf_pack_s5k3m5.ncf|e4c0f33c124993423c4deef9a701b59f80ba7e68
+odm/etc/camera/calibrationOutput_IR.bin:odm/19811/etc/camera/calibrationOutput_IR.bin|4ee9dfc011483bcb729ff81f6d387fa8c7888ee7
+odm/etc/camera/calibrationOutput_uw.bin:odm/19811/etc/camera/calibrationOutput_uw.bin|a62782f2034e437ce33d842e1d475c3c759040db
+odm/etc/camera/calibrationOutput_wt.bin:odm/19811/etc/camera/calibrationOutput_wt.bin|c9b3b7b09f41d69849d05aa359901cb114604970
+odm/etc/camera/darksight/darksight_main.bin:odm/19811/etc/camera/darksight/darksight_main.bin|84251264cb0483d97914bedd8bd1175a858f2f05
+odm/etc/camera/darksight/darksight_ultrawide.bin:odm/19811/etc/camera/darksight/darksight_ultrawide.bin|050f73f28e0e1484acb5b9011272c98046b510ae
+odm/etc/camera/distortion_result.bin:odm/19811/etc/camera/distortion_result.bin|404b99f2af1136cd331157c4cd14f6398618713c
+odm/etc/init/calibrationOutput_IR.rc:odm/19811/etc/init/calibrationOutput_IR.rc|8b79252c6a7b170fad45b95270a34e9b2638ac8a
+odm/etc/init/calibrationOutput_uw.rc:odm/19811/etc/init/calibrationOutput_uw.rc|6b52a4b0af0c097aa7e443eb2bd9f2902aad750a
+odm/etc/init/calibrationOutput_wt.rc:odm/19811/etc/init/calibrationOutput_wt.rc|2559cf2fd010d6be28147e5590d9cda1ff25ddfe
+odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin:odm/19811/lib64/camera/com.qti.sensormodule.semco_imx586.bin|61fdc36de3ac35968d099177e4635eba213d2559
+odm/lib64/camera/com.qti.sensormodule.semco_imx586_BG.bin:odm/19811/lib64/camera/com.qti.sensormodule.semco_imx586_BG.bin|86271f9f5d29db5f0830c952c3a23b2389ddac15
+odm/lib64/camera/com.qti.sensormodule.semco_imx689.bin:odm/19811/lib64/camera/com.qti.sensormodule.semco_imx689.bin|62dd4c254d17e912ecb30903624351a1043255fc
+odm/lib64/camera/com.qti.sensormodule.semco_imx689_MP.bin:odm/19811/lib64/camera/com.qti.sensormodule.semco_imx689_MP.bin|0b1b66a8e1992634684a17abebcc3154ee4da76b
+odm/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin:odm/19811/lib64/camera/com.qti.sensormodule.semco_s5k3m5.bin|e9dc6daf667fda9b7817376a5ae61431631f20ac
+odm/lib64/camera/com.qti.sensormodule.shine_gc5035.bin:odm/19811/lib64/camera/com.qti.sensormodule.shine_gc5035.bin|d4f7ff173fc0ad223a6c13b8a156437256f28a19
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin:odm/19811/lib64/camera/com.qti.sensormodule.truly_imx471.bin|823d0c67e519d7b132f3d28e09a6984932c733f7
+odm/lib64/camera/com.qti.tuned.semco_imx586.bin:odm/19811/lib64/camera/com.qti.tuned.semco_imx586.bin|94e8b01fd6dea6c6e8d2233565ac1be2fd98bfc6
+odm/lib64/camera/com.qti.tuned.semco_imx586_BG.bin:odm/19811/lib64/camera/com.qti.tuned.semco_imx586_BG.bin|16084a06b8b2a13de003ac5fe7a035912f023912
+odm/lib64/camera/com.qti.tuned.semco_imx689.bin:odm/19811/lib64/camera/com.qti.tuned.semco_imx689.bin|90585dcf51ea521a2e01f7f97dfcd183c27ebd1e
+odm/lib64/camera/com.qti.tuned.semco_s5k3m5.bin:odm/19811/lib64/camera/com.qti.tuned.semco_s5k3m5.bin|d9f4ac5dbd979dd40daa3d7af085728809f20fcd
+odm/lib64/camera/com.qti.tuned.shine_gc5035.bin:odm/19811/lib64/camera/com.qti.tuned.shine_gc5035.bin|388b65f423584ec46c79126405240c67e1e8b177
+odm/lib64/camera/com.qti.tuned.truly_imx471.bin:odm/19811/lib64/camera/com.qti.tuned.truly_imx471.bin|e7a9287a713f8ca2be6d8d82813bb55cf66fa557
+odm/lib64/camera/com.qti_instantnoodlep.sensor.gc5035.so:odm/19811/lib64/camera/com.qti_instantnoodlep.sensor.gc5035.so|1f1daaffae0fc034310c533eb9093895eb155a3f
+odm/lib64/camera/com.qti_instantnoodlep.sensor.imx471.so:odm/19811/lib64/camera/com.qti_instantnoodlep.sensor.imx471.so|b486bee8d3c4573c92d14e4a4841b5c8fe08ddd0
+odm/lib64/camera/com.qti_instantnoodlep.sensor.imx586.so:odm/19811/lib64/camera/com.qti_instantnoodlep.sensor.imx586.so|08ecddb9cd5640aa1c2ae01b939385d6333cba34
+odm/lib64/camera/com.qti_instantnoodlep.sensor.imx689.so:odm/19811/lib64/camera/com.qti_instantnoodlep.sensor.imx689.so|1bdadae73e2859b51b5f77350a4269a15bdfd022
+odm/lib64/camera/com.qti_instantnoodlep.sensor.s5k3m5.so:odm/19811/lib64/camera/com.qti_instantnoodlep.sensor.s5k3m5.so|7a056f26d7cf3f3bf5d6bcaf24062a65674ef2fc
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -694,6 +741,26 @@ odm/vendor/firmware/gfp9638.b05:odm/19821/vendor/firmware/gfp9638.b05
 odm/vendor/firmware/gfp9638.b06:odm/19821/vendor/firmware/gfp9638.b06
 odm/vendor/firmware/gfp9638.b07:odm/19821/vendor/firmware/gfp9638.b07
 odm/vendor/firmware/gfp9638.mdt:odm/19821/vendor/firmware/gfp9638.mdt
+
+# Fingerprint Firmware (OP8P) - from IN2025_11.C.33
+odm/vendor/firmware/gfp9608.b00:odm/19811/vendor/firmware/gfp9608.b00|517dd164033e997eb36d7ca771228e033bbdee7f
+odm/vendor/firmware/gfp9608.b01:odm/19811/vendor/firmware/gfp9608.b01|adb69ee3c32ac831014d5d059dbda3cf7787f7f2
+odm/vendor/firmware/gfp9608.b02:odm/19811/vendor/firmware/gfp9608.b02|cdc860aa73914f18d71025e53e433611ce500fbc
+odm/vendor/firmware/gfp9608.b03:odm/19811/vendor/firmware/gfp9608.b03|1c4154dea6a9288e69148c78e2c090045bc5df62
+odm/vendor/firmware/gfp9608.b04:odm/19811/vendor/firmware/gfp9608.b04|0017da9617b529f8803fc2107fbfe2d5d8fc0814
+odm/vendor/firmware/gfp9608.b05:odm/19811/vendor/firmware/gfp9608.b05|20155aea40a1ec352061b41c7184fcb7347c267c
+odm/vendor/firmware/gfp9608.b06:odm/19811/vendor/firmware/gfp9608.b06|4ab3bd86ac8cd483acfeeb33cdecbb668dbb142c
+odm/vendor/firmware/gfp9608.b07:odm/19811/vendor/firmware/gfp9608.b07|05b9edb305770ac0ecd504c53abc09e514276edf
+odm/vendor/firmware/gfp9608.mdt:odm/19811/vendor/firmware/gfp9608.mdt|e54cd2d201b0200946761b1849a72a3dd432d400
+odm/vendor/firmware/gfp9638.b00:odm/19811/vendor/firmware/gfp9638.b00|440d55815c2c39d229c7f1370c370ae2fc014ee3
+odm/vendor/firmware/gfp9638.b01:odm/19811/vendor/firmware/gfp9638.b01|75f7f9600ed05de768efbceeb4fe4c8f50530b4c
+odm/vendor/firmware/gfp9638.b02:odm/19811/vendor/firmware/gfp9638.b02|07d009b43d456f01ad202622fb563d7f0dbfc3f0
+odm/vendor/firmware/gfp9638.b03:odm/19811/vendor/firmware/gfp9638.b03|9465be52c6bc0654db9aa25003d58b5096ea9dbd
+odm/vendor/firmware/gfp9638.b04:odm/19811/vendor/firmware/gfp9638.b04|51632beca6b16822e402f29d50fdf56e3231efe0
+odm/vendor/firmware/gfp9638.b05:odm/19811/vendor/firmware/gfp9638.b05|5e3633ed48e2f4d024b341f9214b6a679ee6fbb0
+odm/vendor/firmware/gfp9638.b06:odm/19811/vendor/firmware/gfp9638.b06|388d940358ed3bc76adc3cf26e353e2a11d121e1
+odm/vendor/firmware/gfp9638.b07:odm/19811/vendor/firmware/gfp9638.b07|45e24df3a6e7f2e3ad0e49c184ad2dd1f423f17c
+odm/vendor/firmware/gfp9638.mdt:odm/19811/vendor/firmware/gfp9638.mdt|9896839036b5ac6ce77d6a51664f3a4416707db1
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
