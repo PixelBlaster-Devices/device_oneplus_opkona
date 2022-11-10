@@ -463,3 +463,6 @@ case "$buildvariant" in
         echo "4 4 1 4" > /proc/sys/kernel/printk
         ;;
 esac
+
+# Remove package cache
+rm -rf /data/system/package_cache
