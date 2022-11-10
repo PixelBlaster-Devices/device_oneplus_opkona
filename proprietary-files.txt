@@ -330,9 +330,13 @@ vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|7dc3f932216311875fb598c31cd94837c50cf32e|07034348534c394184ff3ae5809be0e7f222e165
 
 # Camera (OP8) - from IN2025_11.C.33
+odm/etc/camera/ashdr/ncf_pack.ncf:odm/19821/etc/camera/ashdr/ncf_pack.ncf|1d64ee5e6ffc6d9a568432be6a9c74fd0fbf07a3
+odm/etc/camera/ashdr/ncf_pack_imx471.ncf:odm/19821/etc/camera/ashdr/ncf_pack_imx471.ncf|03c58aaba48ff82b25c2b54d814a0659b7d1fb2b
 odm/etc/camera/ashdr/ncf_pack_imx481.ncf:odm/19821/etc/camera/ashdr/ncf_pack_imx481.ncf|606c3f7ec2ce68d33b7391d74ebc253f4798ebc5
 odm/etc/camera/ashdr/ncf_pack_imx586.ncf:odm/19821/etc/camera/ashdr/ncf_pack_imx586.ncf|874710939387840238898134367d6ab6b7356e20
 odm/etc/camera/calibrationOutput_uw.bin:odm/19821/etc/camera/calibrationOutput_uw.bin|2e6182c30520f799bb1a24fb6f9a2bfba6a62e58
+odm/etc/camera/darksight/darksight_main.bin:odm/19821/etc/camera/darksight/darksight_main.bin|eee66587fecf159e4b5ee64f1f8bb63928e8eb62
+odm/etc/camera/darksight/darksight_ultrawide.bin:odm/19821/etc/camera/darksight/darksight_ultrawide.bin|3c8c1155b6686eb16e53354711ca8baf5f9f2883
 odm/etc/camera/distortion_result.bin:odm/19821/etc/camera/distortion_result.bin|c761d6a63f80a526fe76c10da6774087f7746f80
 odm/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin:odm/19821/lib64/camera/com.qti.sensormodule.ofilm_imx481.bin|71b9a43ac95fcefe4b9c534f96009f409cdbce17
 odm/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin:odm/19821/lib64/camera/com.qti.sensormodule.ofilm_imx481_SFK.bin|9513be5f63bdedcaae9507d57380e0a36d5bac94
@@ -347,6 +351,8 @@ odm/lib64/camera/com.qti_instantnoodle.sensor.gc2375.so:odm/19821/lib64/camera/c
 odm/lib64/camera/com.qti_instantnoodle.sensor.imx471.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx471.so|3eb23febc3138a433dc0efceb44c579501a5217a
 odm/lib64/camera/com.qti_instantnoodle.sensor.imx481.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx481.so|0a3dc56fa9344af0a6492931d0b9ebccba2658e2
 odm/lib64/camera/com.qti_instantnoodle.sensor.imx586.so:odm/19821/lib64/camera/com.qti_instantnoodle.sensor.imx586.so|f5589cb35f97d049488378f23bf67418ae7bc880
+odm/lib64/camera/components/com.qti.stats.pdlib.so:odm/19821/lib64/camera/components/com.qti.stats.pdlib.so|4483be8e54e6a769efb5a954d3aea3da8cfe6804
+odm/lib64/camera/components/libipebpsstriping.so:odm/19821/lib64/camera/components/libipebpsstriping.so|0d02a417fb26379c569e7f8c6cb90126235eb2f8
 
 # Camera (OP8P) - from IN2025_11.C.33
 odm/etc/camera/ashdr/ncf_pack.ncf:odm/19811/etc/camera/ashdr/ncf_pack.ncf|1d64ee5e6ffc6d9a568432be6a9c74fd0fbf07a3
