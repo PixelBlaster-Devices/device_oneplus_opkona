@@ -34,3 +34,19 @@ on post-fs-data && property:ro.boot.prj_version=19811
     mount overlay overlay /odm/lib64/camera lowerdir=/odm/19811/lib64/camera:/odm/lib64/camera
     mount overlay overlay /odm/vendor/firmware lowerdir=/odm/19811/vendor/firmware:/odm/vendor/firmware
     mount overlay overlay /vendor/etc lowerdir=/vendor/19811/etc:/vendor/etc
+
+on post-fs-data && property:ro.boot.prj_version=20828                                         
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/20828/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/20828/lib64/camera:/odm/lib64/camera
+
+on post-fs-data && property:ro.boot.prj_version=19805                                         
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/20828/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/20828/lib64/camera:/odm/lib64/camera
+
+on post-fs-data && property:ro.boot.prj_version=20809                                         
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/20828/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/20828/lib64/camera:/odm/lib64/camera
+
+on post-fs-data && property:ro.boot.prj_version=20838                                         
+    mount overlay overlay /odm/etc/camera lowerdir=/odm/20828/etc/camera:/odm/etc/camera
+    mount overlay overlay /odm/lib64/camera lowerdir=/odm/20828/lib64/camera:/odm/lib64/camera

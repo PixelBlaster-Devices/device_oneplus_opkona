@@ -159,31 +159,6 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 # Camera
 odm/etc/camera/fb_default
 odm/etc/camera/fwk_config.json
-odm/etc/camera/ashdr/ncf_pack.ncf
-odm/etc/camera/ashdr/ncf_pack_imx471.ncf
-odm/etc/camera/ashdr/ncf_pack_imx481.ncf
-odm/etc/camera/ashdr/ncf_pack_imx586.ncf
-odm/etc/camera/darksight/darksight_main.bin
-odm/etc/camera/darksight/darksight_ultrawide.bin
-odm/etc/camera/calibrationOutput_uw.bin
-odm/etc/camera/distortion_result.bin
-odm/lib64/camera/components/com.oneplus.node.cfrsnapshot.so
-odm/lib64/camera/components/com.oneplus.node.cfrvideo.so
-odm/lib64/camera/com.qti.sensormodule.holitech_gc02m1b.bin
-odm/lib64/camera/com.qti.sensormodule.qtech_imx481.bin
-odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin
-odm/lib64/camera/com.qti.sensormodule.shine_gc5035.bin
-odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
-odm/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin
-odm/lib64/camera/com.qti.tuned.qtech_imx481.bin
-odm/lib64/camera/com.qti.tuned.semco_imx586.bin
-odm/lib64/camera/com.qti.tuned.shine_gc5035.bin
-odm/lib64/camera/com.qti.tuned.truly_imx471.bin
-odm/lib64/camera/com.qti_lemonades.sensor.gc02m1b.so
-odm/lib64/camera/com.qti_lemonades.sensor.gc5035.so
-odm/lib64/camera/com.qti_lemonades.sensor.imx471.so
-odm/lib64/camera/com.qti_lemonades.sensor.imx481.so
-odm/lib64/camera/com.qti_lemonades.sensor.imx586.so
 odm/lib64/camera/components/com.qti.stats.pdlib.so
 odm/lib64/camera/components/libipebpsstriping.so
 odm/lib64/camera/fdconfigpreview.bin
@@ -328,6 +303,33 @@ vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|7dc3f932216311875fb598c31cd94837c50cf32e|07034348534c394184ff3ae5809be0e7f222e165
+
+# Camera (OP9R)
+odm/etc/camera/ashdr/ncf_pack.ncf:odm/20828/etc/camera/ashdr/ncf_pack.ncf
+odm/etc/camera/ashdr/ncf_pack_imx471.ncf:odm/20828/etc/camera/ashdr/ncf_pack_imx471.ncf
+odm/etc/camera/ashdr/ncf_pack_imx481.ncf:odm/20828/etc/camera/ashdr/ncf_pack_imx481.ncf
+odm/etc/camera/ashdr/ncf_pack_imx586.ncf:odm/20828/etc/camera/ashdr/ncf_pack_imx586.ncf
+odm/etc/camera/darksight/darksight_main.bin:odm/20828/etc/camera/darksight/darksight_main.bin
+odm/etc/camera/darksight/darksight_ultrawide.bin:odm/20828/etc/camera/darksight/darksight_ultrawide.bin
+odm/etc/camera/calibrationOutput_uw.bin:odm/20828/etc/camera/calibrationOutput_uw.bin
+odm/etc/camera/distortion_result.bin:odm/20828/etc/camera/distortion_result.bin
+odm/lib64/camera/components/com.oneplus.node.cfrsnapshot.so:odm/20828/lib64/camera/components/com.oneplus.node.cfrsnapshot.so
+odm/lib64/camera/components/com.oneplus.node.cfrvideo.so:odm/20828/lib64/camera/components/com.oneplus.node.cfrvideo.so
+odm/lib64/camera/com.qti.sensormodule.holitech_gc02m1b.bin:odm/20828/lib64/camera/com.qti.sensormodule.holitech_gc02m1b.bin
+odm/lib64/camera/com.qti.sensormodule.qtech_imx481.bin:odm/20828/lib64/camera/com.qti.sensormodule.qtech_imx481.bin
+odm/lib64/camera/com.qti.sensormodule.semco_imx586.bin:odm/20828/lib64/camera/com.qti.sensormodule.semco_imx586.bin
+odm/lib64/camera/com.qti.sensormodule.shine_gc5035.bin:odm/20828/lib64/camera/com.qti.sensormodule.shine_gc5035.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin:odm/20828/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+odm/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin:odm/20828/lib64/camera/com.qti.tuned.holitech_gc02m1b.bin
+odm/lib64/camera/com.qti.tuned.qtech_imx481.bin:odm/20828/lib64/camera/com.qti.tuned.qtech_imx481.bin
+odm/lib64/camera/com.qti.tuned.semco_imx586.bin:odm/20828/lib64/camera/com.qti.tuned.semco_imx586.bin
+odm/lib64/camera/com.qti.tuned.shine_gc5035.bin:odm/20828/lib64/camera/com.qti.tuned.shine_gc5035.bin
+odm/lib64/camera/com.qti.tuned.truly_imx471.bin:odm/20828/lib64/camera/com.qti.tuned.truly_imx471.bin
+odm/lib64/camera/com.qti_lemonades.sensor.gc02m1b.so:odm/20828/lib64/camera/com.qti_lemonades.sensor.gc02m1b.so
+odm/lib64/camera/com.qti_lemonades.sensor.gc5035.so:odm/20828/lib64/camera/com.qti_lemonades.sensor.gc5035.so
+odm/lib64/camera/com.qti_lemonades.sensor.imx471.so:odm/20828/lib64/camera/com.qti_lemonades.sensor.imx471.so
+odm/lib64/camera/com.qti_lemonades.sensor.imx481.so:odm/20828/lib64/camera/com.qti_lemonades.sensor.imx481.so
+odm/lib64/camera/com.qti_lemonades.sensor.imx586.so:odm/20828/lib64/camera/com.qti_lemonades.sensor.imx586.so
 
 # Camera (OP8) - from IN2025_11.C.33
 odm/etc/camera/ashdr/ncf_pack.ncf:odm/19821/etc/camera/ashdr/ncf_pack.ncf|1d64ee5e6ffc6d9a568432be6a9c74fd0fbf07a3
