@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from OnePlus 9R (LE2101_11.C.33).
+## from OnePlus 9R (LE2101_11_F.16).
 
 # ACDBs
 odm/etc/acdbdata/Audio_Parameter_Version.txt
@@ -98,7 +98,6 @@ vendor/lib/rfsa/adsp/libhdr_skel.so
 vendor/lib/rfsa/adsp/libhta_dsp_skel.so
 vendor/lib/rfsa/adsp/libinterstellar_skel.so
 vendor/lib/rfsa/adsp/libosie_skel.so
-vendor/lib/rfsa/adsp/libpmucount_skel.so
 vendor/lib/rfsa/adsp/libproxy_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
@@ -782,9 +781,6 @@ odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
-odm/lib64/hw/fingerprint.18821_goodix9508_G2_4.default.so
-odm/lib64/hw/fingerprint.18857_goodix9508_G2_4.default.so
-odm/lib64/hw/fingerprint.18865_goodix9558_G3.default.so
 odm/lib64/hw/fingerprint.19805_goodix9638_G6_3.default.so
 odm/lib64/hw/fingerprint.19805_goodix9678_G6_7.default.so
 odm/lib64/hw/fingerprint.19811_goodix9638_G6.default.so
@@ -798,12 +794,17 @@ odm/lib64/libgf_hal_19811_G6_oplus.so
 odm/lib64/libgf_hal_20828_G6_7_oplus.so
 odm/lib64/libgf_hal_G5_oplus.so
 odm/lib64/libgf_hal_G6_oplus.so
-odm/lib64/libgf_ud_hal_18821_G2_4_oplus.so
-odm/lib64/libgf_ud_hal_18857_G2_4_oplus.so
-odm/lib64/libgf_ud_hal_18865_G3_oplus.so
 odm/lib64/libgf_ud_hal_20801_G3_oplus.so
 odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
+
+# Fingerprint - from OOS12
+odm/lib64/hw/fingerprint.18821_goodix9508_G2_4.default.so|acd95bea91b406d9e1297c90b6ed24bfe802f389
+odm/lib64/hw/fingerprint.18857_goodix9508_G2_4.default.so|395301aa5b678561931a36887d51d928766ab380
+odm/lib64/hw/fingerprint.18865_goodix9558_G3.default.so|12cb9fdc0f497c877a829961026e2dcce5e16af1
+odm/lib64/libgf_ud_hal_18821_G2_4_oplus.so|d5ab6c14ee6cbe7249f12135915ff6b3ca34937f
+odm/lib64/libgf_ud_hal_18857_G2_4_oplus.so|822b695cf0507a61ae2c17451cc96a66958f1657
+odm/lib64/libgf_ud_hal_18865_G3_oplus.so|365b28433d0a4663bfa24d837450fc9162a7f3cc
 
 # Fingerprint Firmware
 odm/vendor/firmware/gfp9638.b00
