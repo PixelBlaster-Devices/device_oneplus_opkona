@@ -1481,6 +1481,37 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
+# Sensors (OP8) - from OP8
+odm/etc/sensor/config/kona_ak991x_0.json:odm/19821/etc/sensor/config/kona_ak991x_0.json|bc6326023b95b5e3c109f1102833bdf06a88f0d2
+odm/etc/sensor/config/kona_bmi26x_0.json:odm/19821/etc/sensor/config/kona_bmi26x_0.json|8b668140a5b8eff88642831e58cf5fef2777ac63
+odm/etc/sensor/config/kona_mmc5603x_0.json:odm/19821/etc/sensor/config/kona_mmc5603x_0.json|2e08c6b04df786c5b3dabae9da045bb476937eb4
+odm/etc/sensor/config/kona_qrd_alsps.json:odm/19821/etc/sensor/config/kona_qrd_alsps.json|bb4a757f88d79df41436842954b61725cc6941aa
+odm/etc/sensor/config/kona_qrd_bmi26x_0.json:odm/19821/etc/sensor/config/kona_qrd_bmi26x_0.json|d72700826d3b3b760d92e073d5eaacdd17ee14e6
+odm/etc/sensor/config/kona_qrd_cct.json:odm/19821/etc/sensor/config/kona_qrd_cct.json|91b8fc07891674ec9d140a085ba86d63a90a465a
+odm/etc/sensor/config/kona_qrd_cct_rear.json:odm/19821/etc/sensor/config/kona_qrd_cct_rear.json|00cb662035c8d0eb217fb2e73e5f09e8b8827e19
+odm/etc/sensor/config/kona_qrd_icm4x6xx.json:odm/19821/etc/sensor/config/kona_qrd_icm4x6xx.json|379dd350e89353659f8d344c616a76c22b1ec444
+odm/etc/sensor/config/kona_qrd_lsm6dso.json:odm/19821/etc/sensor/config/kona_qrd_lsm6dso.json|5cde2bc76ad4beab33cdba686ec381109561e464
+odm/etc/sensor/config/kona_qrd_sx933x_0.json:odm/19821/etc/sensor/config/kona_qrd_sx933x_0.json|c3eeb9dad51dd703a39250c0a963ce644495adb7
+odm/etc/sensor/config/kona_stk2232_0.json:odm/19821/etc/sensor/config/kona_stk2232_0.json|f50fad8858ab0b38eb6b9812ce200ddc64658fd5
+odm/etc/sensor/config/kona_sx9324_0.json:odm/19821/etc/sensor/config/kona_sx9324_0.json|aec802daf5dc67cddd10bf36d4d0cfe077d31b57
+odm/etc/sensor/config/kona_sx9324up_0.json:odm/19821/etc/sensor/config/kona_sx9324up_0.json|3d0a80a8183344bf7ce8edf7b2911cdbb76fe644
+
+# Sensors (OP8P) - from OP8P
+odm/etc/sensor/config/kona_T0_tcs3408.json:odm/19811/etc/sensor/config/kona_T0_tcs3408.json|1e35d5855ad43bdf07eb16723cb4a58fea56eb01
+odm/etc/sensor/config/kona_qrd_ak991x_0.json:odm/19811/etc/sensor/config/kona_qrd_ak991x_0.json|bc6326023b95b5e3c109f1102833bdf06a88f0d2
+odm/etc/sensor/config/kona_qrd_bmi26x_0.json:odm/19811/etc/sensor/config/kona_qrd_bmi26x_0.json|8b668140a5b8eff88642831e58cf5fef2777ac63
+odm/etc/sensor/config/kona_qrd_cct.json:odm/19811/etc/sensor/config/kona_qrd_cct.json|91b8fc07891674ec9d140a085ba86d63a90a465a
+odm/etc/sensor/config/kona_qrd_cct_rear.json:odm/19811/etc/sensor/config/kona_qrd_cct_rear.json|00cb662035c8d0eb217fb2e73e5f09e8b8827e19
+odm/etc/sensor/config/kona_qrd_icm4x6xx.json:odm/19811/etc/sensor/config/kona_qrd_icm4x6xx.json|379dd350e89353659f8d344c616a76c22b1ec444
+odm/etc/sensor/config/kona_qrd_lsm6dsm_0.json:odm/19811/etc/sensor/config/kona_qrd_lsm6dsm_0.json|6be14ff074f5b744757af21fae2592c6d316f2ba
+odm/etc/sensor/config/kona_qrd_lsm6dso.json:odm/19811/etc/sensor/config/kona_qrd_lsm6dso.json|5cde2bc76ad4beab33cdba686ec381109561e464
+odm/etc/sensor/config/kona_qrd_mmc5603x_0.json:odm/19811/etc/sensor/config/kona_qrd_mmc5603x_0.json|c41aebcc538c6bc8a0bc07d6107eb62c220027f1
+odm/etc/sensor/config/kona_qrd_stk2232_0.json:odm/19811/etc/sensor/config/kona_qrd_stk2232_0.json|f50fad8858ab0b38eb6b9812ce200ddc64658fd5
+odm/etc/sensor/config/kona_qrd_sx933x_0.json:odm/19811/etc/sensor/config/kona_qrd_sx933x_0.json|c3eeb9dad51dd703a39250c0a963ce644495adb7
+odm/etc/sensor/config/kona_qrd_tcs3408.json:odm/19811/etc/sensor/config/kona_qrd_tcs3408.json|2080585909d557aec94bba76a862eebdf6a0fe95
+odm/etc/sensor/config/kona_qrd_tcs3707.json:odm/19811/etc/sensor/config/kona_qrd_tcs3707.json|1016e62813d68bb6e9d2759940f46ae19649c62a
+odm/etc/sensor/config/kona_stk3a6x_0.json:odm/19811/etc/sensor/config/kona_stk3a6x_0.json|7f967b025638b3925a02627fd7b10d0876be1216
+
 # SMC Invoke - from from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/etc/ssg/ta_config.json|e18554b038da3737b7352d1271e5fde9c789c9df
 vendor/etc/ssg/tz_whitelist.json|c0dc4f4cfee20db5993eb5142e362cba7dfaecd6
