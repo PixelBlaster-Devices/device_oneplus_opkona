@@ -881,8 +881,6 @@ vendor/bin/mdm_helper_proxy
 vendor/lib64/libmdmimgload.so
 
 # Media - OOS
-vendor/etc/media_codecs_kona.xml|e206539a00ecdcf94e19ff2a43a8777f6c14665d
-vendor/etc/media_codecs_kona_vendor.xml|e206539a00ecdcf94e19ff2a43a8777f6c14665d
 vendor/etc/media_codecs_performance_kona.xml|50c1df6e2ba919370435e8eac0b588aba7bb2b11
 vendor/etc/media_codecs_performance_kona_vendor.xml|50c1df6e2ba919370435e8eac0b588aba7bb2b11
 vendor/etc/media_codecs_vendor_audio.xml|fc55096c4a7d3f59b7ed3493858127fa373a9567
