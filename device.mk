@@ -196,7 +196,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
-    CarrierConfigResCommon \
     FrameworksResTarget \
     OPlusFrameworksResCommon \
     OPlusFrameworksResTarget \
@@ -211,8 +210,7 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResInstantnoodle \
     OPlusFrameworksResInstantnoodlep \
     OPlusSettingsProviderResInstantnoodlep \
-    OPlusSystemUIResInstantnoodlep \
-    WifiResTarget
+    OPlusSystemUIResInstantnoodlep
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -240,6 +238,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     media-legacy \
     nq-nfc \
+    overlay \
     perf \
     telephony \
     usb \
