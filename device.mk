@@ -214,23 +214,7 @@ PRODUCT_PACKAGES += \
 # QTI
 TARGET_BOARD_PLATFORM := kona
 
-TARGET_COMMON_QTI_COMPONENTS := \
-    adreno \
-    audio \
-    av \
-    bt \
-    display \
-    gps \
-    init \
-    media-legacy \
-    nq-nfc \
-    overlay \
-    perf \
-    telephony \
-    usb \
-    vibrator \
-    wfd \
-    wlan
+TARGET_COMMON_QTI_COMPONENTS := all
 
 # RIL
 PRODUCT_PACKAGES += \
