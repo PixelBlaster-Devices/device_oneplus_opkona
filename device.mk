@@ -196,7 +196,8 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResInstantnoodle \
     OPlusFrameworksResInstantnoodlep \
     OPlusSettingsProviderResInstantnoodlep \
-    OPlusSystemUIResInstantnoodlep
+    OPlusSystemUIResInstantnoodlep \
+    OPlusColorModesCommon
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
