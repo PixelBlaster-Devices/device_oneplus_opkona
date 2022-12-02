@@ -10,12 +10,6 @@
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
 
-    <!-- True if camera app should be pinned via Pinner Service -->
-    <bool name="config_pinnerCameraApp">true</bool>
-
-    <!-- True if home app should be pinned via Pinner Service -->
-    <bool name="config_pinnerHomeApp">true</bool>
-
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
@@ -64,16 +58,6 @@
 
     <bool name="config_enableHapticTextHandle">true</bool>
 
-    <!-- Default list of files pinned by the Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-        <item>"/system/bin/surfaceflinger"</item>
-    </string-array>
-
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
          May be less than the minimum allowed brightness setting
          that can be set by the user. -->
@@ -102,5 +86,28 @@
     <!-- Safe USB headset gain. This value is used to ensure that the SPL on the USB
     headset output is compliant to EN 60950 requirements for portable music players. -->
     <integer name="config_safe_media_volume_usb_mB">-1650</integer>
+
+    <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+
+    <!-- Whether device has physical alert slider. -->
+    <bool name="config_hasAlertSlider">true</bool>
+
+    <!-- The location of the device's alert slider:
+         0: Left side
+         1: Right side -->
+         <integer name="config_alertSliderLocation">1</integer>
+
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system/system_ext/priv-app/TouchGestures/TouchGestures.apk</item>
+        <item>/system/system_ext/priv-app/OnePlusLab/OnePlusLab.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>com.android.touch.gestures.KeyHandler</item>
+        <item>org.aosp.device.OnePlusLab.KeyHandler</item>
+    </string-array>
 
 </resources>
