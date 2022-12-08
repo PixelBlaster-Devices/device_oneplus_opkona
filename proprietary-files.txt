@@ -1133,10 +1133,6 @@ odm/vendor/firmware/iris5.fw|e407108896c8617f03b44ad95ad7b2b8a17aa417
 odm/vendor/firmware/iris5_ccf1.fw|3df30aeb4a2f4590987abc15605b27b95724bbff
 odm/vendor/firmware/iris5_ccf2.fw|f656f6229ef53d8cc31d67fc1ac0fc0b106b8abf
 
-# IRQ balance
-vendor/bin/msm_irqbalance
-vendor/etc/msm_irqbalance.conf
-
 # Keymaster - from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 vendor/bin/hw/android.hardware.authsecret@1.0-service-qti|2c2015dbf4dc370696b665c9080171fab95f80ed
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
