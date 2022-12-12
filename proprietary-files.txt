@@ -331,7 +331,7 @@ vendor/lib64/com.qti.feature2.serializer.so
 vendor/lib64/com.qti.feature2.stub.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/hw/camera.qcom.so
-vendor/lib64/hw/com.qti.chi.override.so|4dafa4348fa70a6d1e0d6894034630e821826fa7|9a2dcf7f8a88406137d72c0af41665448d62e635
+vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libPolarrRender.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_beautyshot_4.0.so
