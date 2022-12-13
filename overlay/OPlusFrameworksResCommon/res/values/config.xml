@@ -10,12 +10,14 @@
 
     <!-- Paths to the libraries that contain device specific key handlers -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system_ext/app/KeyHandler/KeyHandler.apk</item>
+        <item>/system/system_ext/priv-app/TouchGestures/TouchGestures.apk</item>
+        <item>/system/system_ext/priv-app/OnePlusLab/OnePlusLab.apk</item>
     </string-array>
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>co.aospa.settings.device.KeyHandler</item>
+        <item>com.android.touch.gestures.KeyHandler</item>
+        <item>org.aosp.device.OnePlusLab.KeyHandler</item>
     </string-array>
 
     <!-- Gestures' key codes. If the gesture is not supported set it to 0. -->
