@@ -1465,6 +1465,7 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 -odm/etc/vintf/manifest/manifest_oplusSensor.xml
 
 # Sensors (OP9R)
+odm/etc/sensor/config/kona_bu52053nvx_0.json
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
 odm/etc/sensor/config/kona_qrd_alsps.json
 odm/etc/sensor/config/kona_qrd_bmi26x_0.json
