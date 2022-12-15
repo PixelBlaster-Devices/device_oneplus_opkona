@@ -1,2 +1,7 @@
 # GMS
 ro.opa.device_model_id=ga-oplus-skill-os121-211011
+
+# PixelBlaster
+ro.pb.cpu_no=1
+ro.pb.maintainer=TheTablaster
+ro.pb.maintainertg=https://t.me/V3NK4135H
