@@ -11,4 +11,12 @@
     <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">123</integer>
 
+    <!-- Alert Slider UI -->
+    <dimen name="tri_state_down_dialog_position">481px</dimen>
+    <dimen name="tri_state_down_dialog_position_l">377px</dimen>
+    <dimen name="tri_state_middle_dialog_position">350px</dimen>
+    <dimen name="tri_state_middle_dialog_position_l">377px</dimen>
+    <dimen name="tri_state_up_dialog_position">219px</dimen>
+    <dimen name="tri_state_up_dialog_position_l">377px</dimen>
+
 </resources>
