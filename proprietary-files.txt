@@ -1062,6 +1062,7 @@ odm/etc/inparm/irissoft/inParm6_up.txt|0d1948cfa3394e2de7d012c5b3f7f6cb350f667f
 odm/etc/inparm/irissoft/inParm8_a.txt|1bf740e4aa306460af87df5367ca1270467ddc4b
 odm/etc/inparm/irissoft/inParm8_b.txt|c889524d438ca8e91450ba0b3903fd3513fabbe4
 odm/etc/inparm/irissoft/inParm8_c.txt|5c62eafba36428f3bce04ce8da7c589925f34746
+odm/etc/inparm/irissoft/mcfCheck.txt|6a08bb530c891b7393c614d23ee95152da3e7ed8
 odm/etc/irissoft.fw|ccfb5902e0838690bef7a86b39b82ff17bb2728d
 
 # Iris (OP8) - from IN2025_11_F.13
