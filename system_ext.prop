@@ -6,6 +6,11 @@ persist.bluetooth.bqr.choppy_threshold=9,6
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
 
+# Camera
+persist.camera.privapp.list=com.oneplus.camera
+persist.vendor.camera.privapp.list=com.oneplus.camera
+ro.oplus.version.base=19839.3.123.2022082613030810219754
+
 # Charging
 ro.charger.enable_suspend=1
 
