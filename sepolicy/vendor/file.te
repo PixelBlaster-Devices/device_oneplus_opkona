@@ -1,2 +1,4 @@
 # KProfiles
 type sysfs_kprofiles, sysfs_type, fs_type;
+
+type public_adsprpcd_file, file_type;
