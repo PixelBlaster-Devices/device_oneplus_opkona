@@ -10,6 +10,7 @@ persist.bluetooth.bqr.min_interval_ms=60000
 persist.camera.privapp.list=com.oneplus.camera
 persist.vendor.camera.privapp.list=com.oneplus.camera
 ro.oplus.version.base=19839.3.123.2022082613030810219754
+vendor.camera.aux.packagelist=android,com.oneplus.camera
 
 # Charging
 ro.charger.enable_suspend=1

@@ -107,7 +107,7 @@ vendor.qcom.bluetooth.soc=hastings
 
 # Camera
 vendor.camera.algo.jpeghwencode=0
-vendor.camera.aux.packagelist=android,com.oneplus.camera
+
 
 # Chipset
 ro.soc.manufacturer=QTI
